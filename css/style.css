@@ -75,9 +75,8 @@
     border-radius: 0px;
 }
 
-/* 
+
 /*** Navbar ***/
-/*
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -150,7 +149,6 @@
         opacity: 1;
     }
 }
- */
 
 
 /*** Header carousel ***/
@@ -215,7 +213,6 @@
 
 
 /*** Section Title ***/
-/*
 .section-title {
     position: relative;
     display: inline-block;
@@ -253,7 +250,7 @@
     width: calc(100% + 60px);
     left: 0;
 }
-*/
+
 
 /*** Service ***/
 .service-item {
@@ -439,9 +436,21 @@
 .navbar .dropdown-menu {
     border: none;
     border-radius: 8px;
-    padding: 10px 0;
+    padding: 8px 0;
     box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    overflow: hidden; /* keeps hover bg inside */
+}
+
+/* Dropdown animation on hover */
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 /* Dropdown items */
@@ -450,135 +459,87 @@
     font-size: 14px;
     font-weight: 500;
     color: var(--dark);
-    transition: all 0.3s ease;
+    border-radius: 0; /* prevents hover bg bleeding */
+    width: 100%;      /* makes hover background full width */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 /* Hover effect for dropdown items */
 .navbar .dropdown-menu .dropdown-item:hover {
-    background-color: var(--primary);
-    color: #fff;
     background-color: #06BBCC;
+    color: #fff;
     transform: translateX(5px);
 }
 
-/* Dropdown animation */
-.navbar .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.navbar .dropdown-menu {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-}
-/* Hover background for navbar links */
+/* Navbar links */
 .navbar-light .navbar-nav .nav-link {
     position: relative;
+    padding: 12px 18px; /* tighter hover area */
+    margin: 0 5px;
+    border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 1px;
-    padding: 20px 20px;
 }
 
-/* Background on hover */
+/* Hover background for navbar links */
 .navbar-light .navbar-nav .nav-link:hover {
     background-color: #06BBCC;
     color: #fff !important;
 }
-
-
-/******************** PROGRAMS SECTION ********************/
-
-/* Section title */
-.section-title-container {
-  text-align: center;
-  margin-bottom: 5px;  /* space before boxes */
-  margin-top: 3px;
-}
-
+/* Center the "Our Programs" heading */
 .section-title {
-  font-size: 2rem;                   /* bigger */
-  font-weight: 700;                    /* bold */
-  color: #06BBCC;  
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);    
-  position: relative;
-  display: inline-block;
-  padding-bottom: 10px;
-
+  text-align: center;      /* Center horizontally */
+  font-size: 20px;         /* Size of the heading */
+  font-weight: 700;        /* Bold */
+  margin-bottom: 40px;     /* Space below the heading */
+  color: #06BBCC;          /* Blue color */
+  letter-spacing: 0;       /* Remove extra space between letters */
 }
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 70px;
-  height: 4px;
-  background: var(--primary);  /* your theme blue */
-  border-radius: 2px;
+/* Program Cards container */
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center all cards */
 }
-
 
 /* Program Cards */
-.card {
-    position: relative;
-    border: none;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.program-card {
+  display: block;
+  width: 250px; /* Fixed width for uniformity */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: var(--dark);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  text-align: center;
 }
 
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
+.program-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
-/* Blue overlay */
-.card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--primary);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
+/* Hover effect */
+.program-card:hover {
+  background: #06BBCC;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.card-body {
-    position: relative;
-    z-index: 2; /* keeps text above overlay */
-    text-align: center;
-    padding: 20px;
+.program-card:hover img {
+  opacity: 0.3;
 }
 
-.card-title {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #181d38;
-    transition: color 0.3s ease;
+.program-card:hover h5 {
+  color: #fff;
 }
 
-/* Hover effects */
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-    background-color: #06BBCC;
-}
-
-.card:hover img {
-    transform: scale(1.08);
-}
-
-.card:hover::before {
-    opacity: 0.6;
-}
-
-.card:hover .card-title {
-    color: #fff;
+@media (max-width: 768px) {
+  .program-card {
+    width: 100%; /* Full width on small screens */
+  }
 }
