@@ -75,8 +75,9 @@
     border-radius: 0px;
 }
 
-
+/* 
 /*** Navbar ***/
+/*
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -149,6 +150,7 @@
         opacity: 1;
     }
 }
+ */
 
 
 /*** Header carousel ***/
@@ -213,6 +215,7 @@
 
 
 /*** Section Title ***/
+/*
 .section-title {
     position: relative;
     display: inline-block;
@@ -250,7 +253,7 @@
     width: calc(100% + 60px);
     left: 0;
 }
-
+*/
 
 /*** Service ***/
 .service-item {
@@ -484,35 +487,98 @@
     background-color: #06BBCC;
     color: #fff !important;
 }
+
+
+/******************** PROGRAMS SECTION ********************/
+
+/* Section title */
+.section-title-container {
+  text-align: center;
+  margin-bottom: 5px;  /* space before boxes */
+  margin-top: 3px;
+}
+
+.section-title {
+  font-size: 2rem;                   /* bigger */
+  font-weight: 700;                    /* bold */
+  color: #06BBCC;  
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);    
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: var(--primary);  /* your theme blue */
+  border-radius: 2px;
+}
+
+
 /* Program Cards */
-.program-card {
-  display: block;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-decoration: none;
-  color: var(--dark);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card {
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.program-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
-.program-card h5 {
-  margin: 15px;
-  font-weight: 600;
-  transition: color 0.3s ease;
+/* Blue overlay */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
-.program-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+.card-body {
+    position: relative;
+    z-index: 2; /* keeps text above overlay */
+    text-align: center;
+    padding: 20px;
 }
 
-.program-card:hover h5 {
-  color: var(--primary);
+.card-title {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #181d38;
+    transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    background-color: #06BBCC;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card:hover::before {
+    opacity: 0.6;
+}
+
+.card:hover .card-title {
+    color: #fff;
 }
