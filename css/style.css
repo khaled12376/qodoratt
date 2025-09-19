@@ -5,6 +5,49 @@
     --dark: #181d38;
 }
 
+/* Remove default margins and ensure full-width footer */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Footer full-width styling */
+.footer {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+}
+
+.footer .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+}
+
+.footer .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Ensure no body margins affect footer */
+body {
+    margin-bottom: 0 !important;
+}
+
+/* Remove any default Bootstrap container margins that might affect footer */
+.footer .copyright {
+    margin: 0 !important;
+    padding: 15px 0 !important;
+}
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -331,6 +374,76 @@
     
     .card:hover {
         transform: translateY(-5px);
+    }
+}
+
+/*** Show/Hide Programs & Diplomas Functionality ***/
+.hidden-program,
+.hidden-diploma {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hidden-program.fade-in,
+.hidden-diploma.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden-program.fade-out,
+.hidden-diploma.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Toggle button styling */
+#toggleProgramsBtn,
+#toggleDiplomasBtn {
+    background: linear-gradient(135deg, var(--primary) 0%, #048a99 100%);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(6, 187, 204, 0.3);
+}
+
+#toggleProgramsBtn:hover,
+#toggleDiplomasBtn:hover {
+    background: linear-gradient(135deg, #048a99 0%, var(--primary) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(6, 187, 204, 0.4);
+}
+
+#toggleProgramsBtn i,
+#toggleDiplomasBtn i {
+    transition: transform 0.3s ease;
+}
+
+#toggleProgramsBtn:hover i,
+#toggleDiplomasBtn:hover i {
+    transform: scale(1.1);
+}
+
+/* Animation for card appearance */
+.program-item,
+.diploma-item {
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -926,6 +1039,53 @@
   border-color: var(--primary);
   transform: scale(1.1);
   box-shadow: 0 5px 15px rgba(6, 187, 204, 0.3);
+}
+
+/*** Programs Page Background Styling ***/
+/* Option 1: Simple solid background color */
+.programs-page-bg {
+  background-color: #f8f9fa; /* Light gray background */
+  min-height: 100vh;
+}
+
+/* Option 2: Gradient background */
+.programs-page-gradient {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+}
+
+/* Option 3: Primary color theme background */
+.programs-page-primary {
+  background: linear-gradient(135deg, var(--light) 0%, #ffffff 50%, var(--light) 100%);
+  min-height: 100vh;
+}
+
+/* Option 4: Modern blue gradient */
+.programs-page-modern {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Option 5: Subtle pattern background */
+.programs-page-pattern {
+  background-color: #f8f9fa;
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(6, 187, 204, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 75px 75px, rgba(6, 187, 204, 0.1) 2px, transparent 2px);
+  background-size: 100px 100px;
+  min-height: 100vh;
+}
+
+/* Adjust card styling for colored backgrounds */
+.programs-page-modern .card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.programs-page-modern .section-title {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .animated {
   animation-duration: 1s;
