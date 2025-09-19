@@ -219,6 +219,29 @@
     text-transform: uppercase;
 }
 
+/*** Navbar Logo Styling ***/
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 35px;
+        margin-right: 10px;
+    }
+}
+
 
 /*** Enhanced Program Cards ***/
 .card {
