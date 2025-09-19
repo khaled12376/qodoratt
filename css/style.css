@@ -5,49 +5,6 @@
     --dark: #181d38;
 }
 
-/* Remove default margins and ensure full-width footer */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* Footer full-width styling */
-.footer {
-    margin: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    width: 100vw !important;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw !important;
-    margin-right: -50vw !important;
-}
-
-.footer .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    max-width: 100% !important;
-}
-
-.footer .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-}
-
-/* Ensure no body margins affect footer */
-body {
-    margin-bottom: 0 !important;
-}
-
-/* Remove any default Bootstrap container margins that might affect footer */
-.footer .copyright {
-    margin: 0 !important;
-    padding: 15px 0 !important;
-}
-
 .fw-medium {
     font-weight: 600 !important;
 }
