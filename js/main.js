@@ -84,9 +84,9 @@
                 autoplayTimeout: 4000, // 4 seconds between slides
                 smartSpeed: 800,       // Fast transition speed
                 items: 1,
-                dots: true,
+                dots: false,           // Hide dots completely
                 loop: true,
-                nav: true,
+                nav: true,             // Always show navigation arrows
                 animateOut: 'slideOutLeft',
                 animateIn: 'slideInRight',
                 navText: [
@@ -95,8 +95,8 @@
                 ],
                 responsive: {
                     0: {
-                        nav: false,
-                        dots: true
+                        nav: true,     // Show arrows on mobile too
+                        dots: false    // Keep dots hidden on mobile
                     },
                     768: {
                         nav: true,
