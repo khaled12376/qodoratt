@@ -1,6 +1,15 @@
 (function ($) {
     "use strict";
 
+    // Spinner removal functionality
+    window.addEventListener("load", function () {
+        const spinner = document.getElementById("spinner");
+        if (spinner) {
+            spinner.classList.remove("show");
+            setTimeout(() => spinner.remove(), 300); // Smooth fade optional
+        }
+    });
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -66,23 +75,37 @@
         return false;
     });
 
-    // Header carousel
-    $(".header-carousel").owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 3000, // time between slides
-        smartSpeed: 600,       // make the transition faster
-        items: 1,
-        dots: false,
-        loop: true,
-        nav: true,
-        animateOut: 'slideOutLeftFast',
-        animateIn: 'slideInRightFast',
-        navText: [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
+    // Header carousel - Fast sliding with arrows
+    // Initialize header carousel when document is ready
+    $(document).ready(function() {
+        if ($(".header-carousel").length > 0) {
+            $(".header-carousel").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 4000, // 4 seconds between slides
+                smartSpeed: 800,       // Fast transition speed
+                items: 1,
+                dots: true,
+                loop: true,
+                nav: true,
+                animateOut: 'slideOutLeft',
+                animateIn: 'slideInRight',
+                navText: [
+                    '<i class="bi bi-chevron-left"></i>',
+                    '<i class="bi bi-chevron-right"></i>'
+                ],
+                responsive: {
+                    0: {
+                        nav: false,
+                        dots: true
+                    },
+                    768: {
+                        nav: true,
+                        dots: true
+                    }
+                }
+            });
+        }
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -102,46 +125,6 @@
             },
             992: {
                 items:3
-            }
-        }
-    });
-    
-    // Statistics Counter Animation
-    function animateCounter() {
-        $('.stat-number').each(function() {
-            const $this = $(this);
-            const target = parseInt($this.data('target'));
-            const duration = 2000; // 2 seconds
-            const increment = target / (duration / 16); // 60fps
-            let current = 0;
-            
-            const updateCounter = () => {
-                if (current < target) {
-                    current += increment;
-                    if (current > target) current = target;
-                    $this.text(Math.floor(current) + (target === 98 ? '' : '+'));
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    $this.text(target + (target === 98 ? '%' : '+'));
-                }
-            };
-            
-            updateCounter();
-        });
-    }
-    
-    // Trigger counter animation when stats section comes into view
-    $(window).scroll(function() {
-        const statsSection = $('.stats-section');
-        if (statsSection.length) {
-            const statsTop = statsSection.offset().top;
-            const statsHeight = statsSection.outerHeight();
-            const windowTop = $(window).scrollTop();
-            const windowHeight = $(window).height();
-            
-            if (windowTop + windowHeight > statsTop + (statsHeight / 2) && !statsSection.hasClass('animated')) {
-                statsSection.addClass('animated');
-                animateCounter();
             }
         }
     });
