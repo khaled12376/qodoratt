@@ -3,6 +3,12 @@
     --primary: #06BBCC;
     --light: #F0FBFC;
     --dark: #181d38;
+    --light-grey: #F8F9FA;
+}
+
+/* General Background */
+body {
+    background-color: var(--light-grey) !important;
 }
 
 .fw-medium {
@@ -19,6 +25,22 @@
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+
+/* About Page Hover Effects */
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(6, 163, 218, 0.2) !important;
+    background: #06A3DA !important;
+}
+
+.hover-effect:hover h6,
+.hover-effect:hover small {
+    color: white !important;
+}
+
+.hover-effect:hover .fa {
+    color: white !important;
 }
 
 
