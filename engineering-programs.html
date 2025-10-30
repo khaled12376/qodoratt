@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -32,41 +32,56 @@
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
       <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
           <img src="533148242_122102107550975667_6846905199516547475_n.jpg" alt="Global Academy Logo" class="navbar-logo">
-          <h2 class="m-0 text-primary">Global Academy</h2>
+          <h2 class="m-0 text-primary" data-translate="academy_name">Global Academy</h2>
       </a>
       <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto p-4 p-lg-0">
-              <a href="index.html" class="nav-item nav-link">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="index.html" class="nav-item nav-link" data-translate="nav_home">Home</a>
+              <a href="about.html" class="nav-item nav-link" data-translate="nav_about">About</a>
               <div class="nav-item dropdown">
-                  <a href="programs.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'">Programs</a>
+                  <a href="programs.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'" data-translate="nav_programs">Programs</a>
                   <div class="dropdown-menu fade-down m-0">
-                      <a href="engineering-programs.html" class="dropdown-item">Engineering Programs</a>
-                      <a href="program-leadership-management.html" class="dropdown-item">Leadership & Management</a>
-                      <a href="program-marketing.html" class="dropdown-item">Marketing Programs</a>
-                      <a href="program-quality.html" class="dropdown-item">Quality Programs</a>
-                      <a href="program-safety-health.html" class="dropdown-item">Safety & Health Programs</a>
-                      <a href="program-accounting-finance.html" class="dropdown-item">Accounting & Finance</a>
-                      <a href="program-procurement.html" class="dropdown-item">Procurement & Supply Chain</a>
-                      <a href="program-human-resources.html" class="dropdown-item">Human Resources</a>
+                      <a href="engineering-programs.html" class="dropdown-item" data-translate="nav_engineering">Engineering Programs</a>
+                      <a href="program-leadership-management.html" class="dropdown-item" data-translate="nav_leadership">Leadership & Management</a>
+                      <a href="program-marketing.html" class="dropdown-item" data-translate="nav_marketing">Marketing Programs</a>
+                      <a href="program-quality.html" class="dropdown-item" data-translate="nav_quality">Quality Programs</a>
+                      <a href="program-safety-health.html" class="dropdown-item" data-translate="nav_safety">Safety & Health Programs</a>
+                      <a href="program-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting">Accounting & Finance</a>
+                      <a href="program-procurement.html" class="dropdown-item" data-translate="nav_procurement">Procurement & Supply Chain</a>
+                      <a href="program-human-resources.html" class="dropdown-item" data-translate="nav_hr">Human Resources</a>
                   </div>
               </div>
               <div class="nav-item dropdown">
-                  <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'">Diplomas</a>
+                  <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'" data-translate="nav_diplomas">Diplomas</a>
                   <div class="dropdown-menu fade-down m-0">
-                      <a href="diploma-training-development.html" class="dropdown-item">Training & Development</a>
-                      <a href="diploma-accounting-finance.html" class="dropdown-item">Accounting & Finance</a>
-                      <a href="diploma-management-science.html" class="dropdown-item">Management Science</a>
-                      <a href="diploma-womens-leadership.html" class="dropdown-item">Women's Leadership</a>
-                      <a href="diploma-project-management.html" class="dropdown-item">Project Management</a>
+                      <a href="diploma-training-development.html" class="dropdown-item" data-translate="nav_training_diploma">Training & Development</a>
+                      <a href="diploma-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting_diploma">Accounting & Finance</a>
+                      <a href="diploma-management-science.html" class="dropdown-item" data-translate="nav_management_diploma">Management Science</a>
+                      <a href="diploma-womens-leadership.html" class="dropdown-item" data-translate="nav_women_diploma">Women's Leadership</a>
+                      <a href="diploma-project-management.html" class="dropdown-item" data-translate="nav_project_diploma">Project Management</a>
                   </div>
               </div>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-          <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+              <a href="contact.html" class="nav-item nav-link" data-translate="nav_contact">Contact</a>
+                          
+                <!-- Language Selector -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i>
+                        <span id="currentLang">EN</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end fade-down">
+                        <a href="#" class="dropdown-item" onclick="switchLanguage(''en''); return false;">
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item" onclick="switchLanguage(''ar''); return false;">
+                            Arabic
+                        </a>
+                    </div>
+                </div></div>
+          <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-translate="btn_enroll"><span data-translate="btn_join">Join Now</span><i class="fa fa-arrow-right ms-3"></i></a>
       </div>
   </nav>
   <!-- Navbar End -->
@@ -76,12 +91,12 @@
     <div class="container py-5">
       <div class="row justify-content-center">
         <div class="col-lg-10 text-center">
-          <h1 class="display-3 text-white animated slideInDown">Engineering Programs</h1>
+          <h1 class="display-3 text-white animated slideInDown" data-translate="eng_header_title">Engineering Programs</h1>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center">
-              <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-              <li class="breadcrumb-item"><a class="text-white" href="programs.html">Programs</a></li>
-              <li class="breadcrumb-item text-white active" aria-current="page">Engineering</li>
+              <li class="breadcrumb-item"><a class="text-white" href="index.html" data-translate="nav_home">Home</a></li>
+              <li class="breadcrumb-item"><a class="text-white" href="programs.html" data-translate="nav_programs">Programs</a></li>
+              <li class="breadcrumb-item text-white active" aria-current="page" data-translate="eng_header_breadcrumb">Engineering</li>
             </ol>
           </nav>
         </div>
@@ -96,237 +111,237 @@
       <div class="row g-5">
         <div class="col-lg-8">
           <div class="mb-5">
-            <h2 class="mb-4">Program Overview</h2>
-            <p class="mb-4">Our Engineering Programs provide comprehensive training in modern engineering practices, project management, and technical office operations. Master civil engineering, architecture, mechanical and electrical systems, surveying, real estate valuation, and build effective engineering strategies that align with industry standards and create sustainable infrastructure. Our curriculum covers 12 specialized programs designed to develop engineering professionals at all levels, from recent graduates to experienced practitioners.</p>
+            <h2 class="mb-4"><span data-translate="program_overview">Program Overview</span></h2>
+            <p class="mb-4" data-translate="eng_programs_desc">Our Engineering Programs provide comprehensive training in modern engineering practices, project management, and technical office operations. Master civil engineering, architecture, mechanical and electrical systems, surveying, real estate valuation, and build effective engineering strategies that align with industry standards and create sustainable infrastructure. Our curriculum covers 12 specialized programs designed to develop engineering professionals at all levels, from recent graduates to experienced practitioners.</p>
             
             <div class="row g-4 mb-4">
               <div class="col-md-6">
                 <div class="bg-light rounded p-4 h-100">
-                  <h5 class="text-primary mb-3"><i class="fa fa-clock me-2"></i>Duration</h5>
-                  <p class="mb-0">12 comprehensive programs<br>Flexible scheduling available</p>
+                  <h5 class="text-primary mb-3"><i class="fa fa-clock me-2"></i><span data-translate="duration_title">Duration</span></h5>
+                  <p class="mb-0"><span data-translate="eng_12_programs">12 comprehensive programs</span><br><span data-translate="eng_flexible">Flexible scheduling available</span></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="bg-primary rounded p-4 h-100 text-white">
-                  <h5 class="text-white mb-3"><i class="fa fa-certificate me-2"></i>Certification</h5>
-                  <p class="mb-0">Engineering Professional Certificate<br>Recognized Accreditation</p>
+                  <h5 class="text-white mb-3"><i class="fa fa-certificate me-2"></i><span data-translate="certification_title">Certification</span></h5>
+                  <p class="mb-0"><span data-translate="eng_certificate">Engineering Professional Certificate</span><br><span data-translate="eng_recognized">Recognized Accreditation</span></p>
                 </div>
               </div>
             </div>
 
-            <h3 class="mb-4">Our 12 Specialized Engineering Programs</h3>
+            <h3 class="mb-4" data-translate="eng_specialized_title">Our 12 Specialized Engineering Programs</h3>
 
             <!-- Program 1 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">1. Preparation and Qualification of a Recent Civil and Architecture Engineer - Phase One</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Provide recent Civil and Architecture graduates (newly hired) with the necessary skills and knowledge to work on projects using correct, safe, and quality-driven methods.</p>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_1_title">1. Preparation and Qualification of a Recent Civil and Architecture Engineer - Phase One</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_1_obj">Provide recent Civil and Architecture graduates (newly hired) with the necessary skills and knowledge to work on projects using correct, safe, and quality-driven methods.</p>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Site exploration and soil properties</li>
-                <li>Tower Cranes – Mobile Cranes</li>
-                <li>Structural review of the concrete frame</li>
-                <li>Different methods for transporting, pouring, and finishing concrete</li>
-                <li>Concrete components, properties, and Egyptian Code requirements</li>
-                <li>Road Engineering</li>
-                <li>Presentation + Evaluation</li>
+                <li data-translate="eng_prog_1_axis_1">Site exploration and soil properties</li>
+                <li data-translate="eng_prog_1_axis_2">Tower Cranes – Mobile Cranes</li>
+                <li data-translate="eng_prog_1_axis_3">Structural review of the concrete frame</li>
+                <li data-translate="eng_prog_1_axis_4">Different methods for transporting, pouring, and finishing concrete</li>
+                <li data-translate="eng_prog_1_axis_5">Concrete components, properties, and Egyptian Code requirements</li>
+                <li data-translate="eng_prog_1_axis_6">Road Engineering</li>
+                <li data-translate="eng_prog_1_axis_7">Presentation + Evaluation</li>
               </ul>
               <a href="eng-civil-archi-phase-one.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 2 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">2. Preparation and Qualification of a Recent Civil and Architecture Engineer - Phase Two</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Provide recent Civil and Architecture graduates (newly hired) with the necessary knowledge and skills to execute construction projects using correct, safe, and quality-driven methods.</p>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_2_title">2. Preparation and Qualification of a Recent Civil and Architecture Engineer - Phase Two</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_2_obj">Provide recent Civil and Architecture graduates (newly hired) with the necessary knowledge and skills to execute construction projects using correct, safe, and quality-driven methods.</p>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Brickwork</li>
-                <li>Plastering works</li>
-                <li>Painting works</li>
-                <li>Plumbing works (Supply)</li>
-                <li>External plumbing works (Drainage)</li>
-                <li>Carpentry works "Door and window carpentry"</li>
-                <li>Marble and granite works</li>
-                <li>Presentation + Evaluation</li>
+                <li data-translate="eng_prog_2_axis_1">Brickwork</li>
+                <li data-translate="eng_prog_2_axis_2">Plastering works</li>
+                <li data-translate="eng_prog_2_axis_3">Painting works</li>
+                <li data-translate="eng_prog_2_axis_4">Plumbing works (Supply)</li>
+                <li data-translate="eng_prog_2_axis_5">External plumbing works (Drainage)</li>
+                <li data-translate="eng_prog_2_axis_6">Carpentry works "Door and window carpentry"</li>
+                <li data-translate="eng_prog_2_axis_7">Marble and granite works</li>
+                <li data-translate="eng_prog_2_axis_8">Presentation + Evaluation</li>
               </ul>
               <a href="eng-civil-archi-phase-two.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 3 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">3. Preparation and Qualification of a Recent Civil and Architecture Engineer - Phase Three</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Provide recent Civil and Architecture graduates (newly hired) with the necessary knowledge and skills to execute construction projects using correct, safe, and quality-driven methods.</p>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_3_title">3. Preparation and Qualification of a Recent Civil and Architecture Engineer - Phase Three</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_3_obj">Provide recent Civil and Architecture graduates (newly hired) with the necessary knowledge and skills to execute construction projects using correct, safe, and quality-driven methods.</p>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Introduction to project planning</li>
-                <li>Cost variance analysis</li>
-                <li>Planning using the Network Analysis Method (CPM)</li>
-                <li>Project time control</li>
-                <li>Environmental performance plan</li>
-                <li>Reducing and crashing project time</li>
-                <li>Cost control</li>
-                <li>Occupational Safety and Health Management Systems</li>
-                <li>Presentation + Evaluation</li>
+                <li data-translate="eng_prog_3_axis_1">Introduction to project planning</li>
+                <li data-translate="eng_prog_3_axis_2">Cost variance analysis</li>
+                <li data-translate="eng_prog_3_axis_3">Planning using the Network Analysis Method (CPM)</li>
+                <li data-translate="eng_prog_3_axis_4">Project time control</li>
+                <li data-translate="eng_prog_3_axis_5">Environmental performance plan</li>
+                <li data-translate="eng_prog_3_axis_6">Reducing and crashing project time</li>
+                <li data-translate="eng_prog_3_axis_7">Cost control</li>
+                <li data-translate="eng_prog_3_axis_8">Occupational Safety and Health Management Systems</li>
+                <li data-translate="eng_prog_3_axis_9">Presentation + Evaluation</li>
               </ul>
               <a href="eng-civil-archi-phase-three.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 4 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">4. Preparation and Qualification of a Recent Mechanical and Electrical Engineer - Phase One</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Provide recent Mechanical and Electrical graduates (newly hired) with the necessary knowledge and skills to work on construction projects using correct, safe, and quality-driven methods.</p>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_4_title">4. Preparation and Qualification of a Recent Mechanical and Electrical Engineer - Phase One</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_4_obj">Provide recent Mechanical and Electrical graduates (newly hired) with the necessary knowledge and skills to work on construction projects using correct, safe, and quality-driven methods.</p>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Company regulations</li>
-                <li>Principles of electrically equipping construction sites</li>
-                <li>Site study, traffic analysis, and site planning methods</li>
-                <li>Tower Cranes</li>
-                <li>Electromechanical works in hospitals</li>
-                <li>Team work effectiveness</li>
-                <li>Presentation + Evaluation</li>
+                <li data-translate="eng_prog_4_axis_1">Company regulations</li>
+                <li data-translate="eng_prog_4_axis_2">Principles of electrically equipping construction sites</li>
+                <li data-translate="eng_prog_4_axis_3">Site study, traffic analysis, and site planning methods</li>
+                <li data-translate="eng_prog_4_axis_4">Tower Cranes</li>
+                <li data-translate="eng_prog_4_axis_5">Electromechanical works in hospitals</li>
+                <li data-translate="eng_prog_4_axis_6">Team work effectiveness</li>
+                <li data-translate="eng_prog_4_axis_7">Presentation + Evaluation</li>
               </ul>
               <a href="eng-mech-elec-combined.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 5 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">5. Preparation and Qualification of a Recent Mechanical and Electrical Engineer - Phase Two</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Provide recent Mechanical and Electrical graduates (newly hired) with the necessary knowledge and skills to work on construction projects using correct, safe, and quality-driven methods.</p>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_5_title">5. Preparation and Qualification of a Recent Mechanical and Electrical Engineer - Phase Two</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_5_obj">Provide recent Mechanical and Electrical graduates (newly hired) with the necessary knowledge and skills to work on construction projects using correct, safe, and quality-driven methods.</p>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Fundamentals of hydraulic circuits</li>
-                <li>Introduction to methods for overhauling diesel and gasoline engines</li>
-                <li>Engine fault diagnosis by monitoring oil characteristics</li>
-                <li>Lighting</li>
-                <li>Electrical cables</li>
-                <li>Welding technology</li>
-                <li>Presentation + Evaluation</li>
+                <li data-translate="eng_prog_5_axis_1">Fundamentals of hydraulic circuits</li>
+                <li data-translate="eng_prog_5_axis_2">Introduction to methods for overhauling diesel and gasoline engines</li>
+                <li data-translate="eng_prog_5_axis_3">Engine fault diagnosis by monitoring oil characteristics</li>
+                <li data-translate="eng_prog_5_axis_4">Lighting</li>
+                <li data-translate="eng_prog_5_axis_5">Electrical cables</li>
+                <li data-translate="eng_prog_5_axis_6">Welding technology</li>
+                <li data-translate="eng_prog_5_axis_7">Presentation + Evaluation</li>
               </ul>
               <a href="eng-mech-elec-combined.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 6 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">6. Preparation and Qualification of a Recent Mechanical and Electrical Engineer - Phase Three</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Provide recent Mechanical and Electrical graduates (newly hired) with the necessary knowledge and skills to work on construction projects using correct, safe, and quality-driven methods.</p>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_6_title">6. Preparation and Qualification of a Recent Mechanical and Electrical Engineer - Phase Three</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_6_obj">Provide recent Mechanical and Electrical graduates (newly hired) with the necessary knowledge and skills to work on construction projects using correct, safe, and quality-driven methods.</p>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Introduction to project planning</li>
-                <li>Planning using the Network Analysis Method (CPM)</li>
-                <li>Environmental performance plan</li>
-                <li>Reducing and crashing project time</li>
-                <li>Cost control</li>
-                <li>Occupational Safety and Health Management Systems</li>
-                <li>Presentation + Evaluation</li>
+                <li data-translate="eng_prog_6_axis_1">Introduction to project planning</li>
+                <li data-translate="eng_prog_6_axis_2">Planning using the Network Analysis Method (CPM)</li>
+                <li data-translate="eng_prog_6_axis_3">Environmental performance plan</li>
+                <li data-translate="eng_prog_6_axis_4">Reducing and crashing project time</li>
+                <li data-translate="eng_prog_6_axis_5">Cost control</li>
+                <li data-translate="eng_prog_6_axis_6">Occupational Safety and Health Management Systems</li>
+                <li data-translate="eng_prog_6_axis_7">Presentation + Evaluation</li>
               </ul>
               <a href="eng-mech-elec-combined.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 7 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">7. Road Surveying Works</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Provide participants with the various surveying skills and knowledge necessary for executing road surveying works.</p>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_7_title">7. Road Surveying Works</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_7_obj">Provide participants with the various surveying skills and knowledge necessary for executing road surveying works.</p>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Introduction to types of roads and different road sections</li>
-                <li>Basis for selecting the longitudinal axis of the project</li>
-                <li>Initial surveying works</li>
-                <li>Curves and their types</li>
-                <li>Laying out the simple horizontal curve, curve calculation laws</li>
-                <li>How to calculate longitudinal and cross slopes in curves</li>
-                <li>How to read road drawings and longitudinal sections</li>
-                <li>Road finishing works</li>
+                <li data-translate="eng_prog_7_axis_1">Introduction to types of roads and different road sections</li>
+                <li data-translate="eng_prog_7_axis_2">Basis for selecting the longitudinal axis of the project</li>
+                <li data-translate="eng_prog_7_axis_3">Initial surveying works</li>
+                <li data-translate="eng_prog_7_axis_4">Curves and their types</li>
+                <li data-translate="eng_prog_7_axis_5">Laying out the simple horizontal curve, curve calculation laws</li>
+                <li data-translate="eng_prog_7_axis_6">How to calculate longitudinal and cross slopes in curves</li>
+                <li data-translate="eng_prog_7_axis_7">How to read road drawings and longitudinal sections</li>
+                <li data-translate="eng_prog_7_axis_8">Road finishing works</li>
               </ul>
               <a href="eng-feasibility-surveying.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 8 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">8. Bridge Surveying Works</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Provide participants with the various surveying skills and knowledge necessary for executing bridge surveying works.</p>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_8_title">8. Bridge Surveying Works</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_8_obj">Provide participants with the various surveying skills and knowledge necessary for executing bridge surveying works.</p>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Introduction (Idea about bridge types)</li>
-                <li>Surveying works performed before the design and execution of bridges</li>
-                <li>Execution of concrete foundations (footings and columns) on the ground</li>
-                <li>Execution of concrete foundations (footings and columns) in rivers and seas</li>
-                <li>Surveying applications on some bridge works (superstructure - finishes)</li>
+                <li data-translate="eng_prog_8_axis_1">Introduction (Idea about bridge types)</li>
+                <li data-translate="eng_prog_8_axis_2">Surveying works performed before the design and execution of bridges</li>
+                <li data-translate="eng_prog_8_axis_3">Execution of concrete foundations (footings and columns) on the ground</li>
+                <li data-translate="eng_prog_8_axis_4">Execution of concrete foundations (footings and columns) in rivers and seas</li>
+                <li data-translate="eng_prog_8_axis_5">Surveying applications on some bridge works (superstructure - finishes)</li>
               </ul>
               <a href="eng-feasibility-surveying.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 9 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">9. Preparation and Qualification of Project Technical Office Engineers</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_9_title">9. Preparation and Qualification of Project Technical Office Engineers</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
               <ul class="mb-3">
-                <li>Performing technical office work according to defined specializations</li>
-                <li>Project planning and control (time and cost)</li>
-                <li>Studying and preparing the contractual obligations for the project</li>
-                <li>Quantity surveying and preparing subcontractor payments and final accounts</li>
-                <li>Being aware of the financial aspects of the contract (matching – creating provisions – procurement procedures)</li>
+                <li data-translate="eng_prog_9_obj_1">Performing technical office work according to defined specializations</li>
+                <li data-translate="eng_prog_9_obj_2">Project planning and control (time and cost)</li>
+                <li data-translate="eng_prog_9_obj_3">Studying and preparing the contractual obligations for the project</li>
+                <li data-translate="eng_prog_9_obj_4">Quantity surveying and preparing subcontractor payments and final accounts</li>
+                <li data-translate="eng_prog_9_obj_5">Being aware of the financial aspects of the contract (matching – creating provisions – procurement procedures)</li>
               </ul>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Technical office specializations</li>
-                <li>Planning budgets</li>
-                <li>Cash flows</li>
-                <li>Cost variance analysis</li>
-                <li>Preparing and drafting claims</li>
-                <li>Quantity matching: Client / Contractors / Warehouse accounts</li>
-                <li>Bank interest</li>
-                <li>Profitability / Surplus</li>
-                <li>Contracting procedures for supplies and purchases (Documentary cycle)</li>
-                <li>Engineering insurance</li>
+                <li data-translate="eng_prog_9_axis_1">Technical office specializations</li>
+                <li data-translate="eng_prog_9_axis_2">Planning budgets</li>
+                <li data-translate="eng_prog_9_axis_3">Cash flows</li>
+                <li data-translate="eng_prog_9_axis_4">Cost variance analysis</li>
+                <li data-translate="eng_prog_9_axis_5">Preparing and drafting claims</li>
+                <li data-translate="eng_prog_9_axis_6">Quantity matching: Client / Contractors / Warehouse accounts</li>
+                <li data-translate="eng_prog_9_axis_7">Bank interest</li>
+                <li data-translate="eng_prog_9_axis_8">Profitability / Surplus</li>
+                <li data-translate="eng_prog_9_axis_9">Contracting procedures for supplies and purchases (Documentary cycle)</li>
+                <li data-translate="eng_prog_9_axis_10">Engineering insurance</li>
               </ul>
               <a href="eng-tech-office.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 10 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">10. Project Management</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_10_title">10. Project Management</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
               <ul class="mb-3">
-                <li>Studying and defining the contractual obligations specific to the project</li>
-                <li>Being aware of the types of alliances for major projects</li>
-                <li>Studying claims and disputes in construction contracts and methods of settling them</li>
-                <li>Project planning and control in terms of (time - cost)</li>
+                <li data-translate="eng_prog_10_obj_1">Studying and defining the contractual obligations specific to the project</li>
+                <li data-translate="eng_prog_10_obj_2">Being aware of the types of alliances for major projects</li>
+                <li data-translate="eng_prog_10_obj_3">Studying claims and disputes in construction contracts and methods of settling them</li>
+                <li data-translate="eng_prog_10_obj_4">Project planning and control in terms of (time - cost)</li>
               </ul>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Types and provisions of the contracting agreement</li>
-                <li>Contract terms – Contract documents and conditions</li>
-                <li>Partnership in major contracting projects</li>
-                <li>FIDIC International Contract Conditions</li>
-                <li>Risk Management</li>
-                <li>Introduction to project planning</li>
-                <li>Planning using Network Analysis and Critical Path Method</li>
-                <li>Non-literal translation of Occupational Safety and Health Management Systems OSHAS 18001/2007</li>
+                <li data-translate="eng_prog_10_axis_1">Types and provisions of the contracting agreement</li>
+                <li data-translate="eng_prog_10_axis_2">Contract terms – Contract documents and conditions</li>
+                <li data-translate="eng_prog_10_axis_3">Partnership in major contracting projects</li>
+                <li data-translate="eng_prog_10_axis_4">FIDIC International Contract Conditions</li>
+                <li data-translate="eng_prog_10_axis_5">Risk Management</li>
+                <li data-translate="eng_prog_10_axis_6">Introduction to project planning</li>
+                <li data-translate="eng_prog_10_axis_7">Planning using Network Analysis and Critical Path Method</li>
+                <li data-translate="eng_prog_10_axis_8">Occupational Safety and Health Management Systems OSHAS 18001/2007</li>
               </ul>
               <a href="eng-tech-office.html" class="btn btn-primary mt-3">
                 <i class="fa fa-info-circle me-2"></i>View Full Program Details
@@ -335,57 +350,54 @@
 
             <!-- Program 11 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">11. Fundamentals of Feasibility Studies for Real Estate Projects</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_11_title">11. Fundamentals of Feasibility Studies for Real Estate Projects</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
               <ul class="mb-3">
-                <li>Identify the fundamentals of feasibility studies for real estate projects, their areas, and details of preliminary, marketing, technical, and environmental studies</li>
-                <li>Modern execution systems and methods for real estate projects</li>
-                <li>Workshops on some real estate project studies and a practical application model in this field</li>
+                <li data-translate="eng_prog_11_obj_1">Identify the fundamentals of feasibility studies for real estate projects, their areas, and details of preliminary, marketing, technical, and environmental studies</li>
+                <li data-translate="eng_prog_11_obj_2">Modern execution systems and methods for real estate projects</li>
+                <li data-translate="eng_prog_11_obj_3">Workshops on some real estate project studies and a practical application model in this field</li>
               </ul>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Technical and environmental study for real estate projects</li>
-                <li>Preliminary feasibility study "Areas of study – Elements of study"</li>
-                <li>Guidance manual for preparing a feasibility study for real estate projects</li>
-                <li>Equipment, tools, parties, and how to identify them</li>
-                <li>Modern execution systems and methods for projects</li>
-                <li>Necessary procedures for starting project construction (real estate / medium / small)</li>
-                <li>Licensing and administrative procedures: Real estate documentation – Commercial register – Insurance</li>
-                <li>Economic, social, and environmental evaluation</li>
-                <li>Practical application model for the feasibility study of a tourist village</li>
+                <li data-translate="eng_prog_11_axis_1">Technical and environmental study for real estate projects</li>
+                <li data-translate="eng_prog_11_axis_2">Preliminary feasibility study "Areas of study – Elements of study"</li>
+                <li data-translate="eng_prog_11_axis_3">Guidance manual for preparing a feasibility study for real estate projects</li>
+                <li data-translate="eng_prog_11_axis_4">Equipment, tools, parties, and how to identify them</li>
+                <li data-translate="eng_prog_11_axis_5">Modern execution systems and methods for projects</li>
+                <li data-translate="eng_prog_11_axis_6">Necessary procedures for starting project construction (real estate / medium / small)</li>
+                <li data-translate="eng_prog_11_axis_7">Licensing and administrative procedures: Real estate documentation – Commercial register – Insurance</li>
+                <li data-translate="eng_prog_11_axis_8">Economic, social, and environmental evaluation</li>
+                <li data-translate="eng_prog_11_axis_9">Practical application model for the feasibility study of a tourist village</li>
               </ul>
               <a href="eng-real-estate-valuation.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
             <!-- Program 12 -->
             <div class="mb-4 p-4 bg-light rounded">
-              <h4 class="text-primary mb-3">12. Real Estate Management and Development: Real Estate Appraisal and Valuation</h4>
-              <h6 class="fw-bold mb-2">Objectives:</h6>
-              <p class="mb-3">Identify the management and development of real estate properties from the following aspects: Administrative, accounting, investment, real estate, technical, legal, and crisis management. Identify the International Standard Requirements for real estate valuation works using different methods:</p>
+              <h4 class="text-primary mb-3" data-translate="eng_prog_12_title">12. Real Estate Management and Development: Real Estate Appraisal and Valuation</h4>
+              <h6 class="fw-bold mb-2"><span data-translate="program_objectives_label">Objectives:</span></h6>
+              <p class="mb-3" data-translate="eng_prog_12_obj">Identify the management and development of real estate properties from the following aspects: Administrative, accounting, investment, real estate, technical, legal, and crisis management. Identify the International Standard Requirements for real estate valuation works using different methods:</p>
               <ul class="mb-3">
-                <li>Cost approach</li>
-                <li>Income capitalization approach</li>
-                <li>Income and rent multiplier</li>
+                <li data-translate="eng_prog_12_obj_1">Cost approach</li>
+                <li data-translate="eng_prog_12_obj_2">Income capitalization approach</li>
+                <li data-translate="eng_prog_12_obj_3">Income and rent multiplier</li>
               </ul>
-              <h6 class="fw-bold mb-2">Main Axes:</h6>
+              <h6 class="fw-bold mb-2"><span data-translate="main_axes_label">Main Axes:</span></h6>
               <ul>
-                <li>Real estate properties from a scientific perspective</li>
-                <li>Real estate property management from a crisis management perspective</li>
-                <li>Real Estate Finance: The real estate finance system – Appraisal and financing – Purposes and areas of appraisal</li>
-                <li>Sales Appraisal: Real estate appraisal using the comparable sales method (previous sales) – Real estate appraisal using the income capitalization method</li>
-                <li>Examples of problems facing real estate appraisers and their solutions according to International Standard Requirements</li>
-                <li>Workshop – Practical on-site exercises for some available models:
-                  <ul>
-                    <li>Performing a practical real estate appraisal for a villa or residential apartment</li>
-                    <li>Performing a practical real estate appraisal for a commercial building</li>
-                    <li>Performing a practical real estate appraisal for a hotel or hotel apartments</li>
-                  </ul>
-                </li>
+                <li data-translate="eng_prog_12_axis_1">Real estate properties from a scientific perspective</li>
+                <li data-translate="eng_prog_12_axis_2">Real estate property management from a crisis management perspective</li>
+                <li data-translate="eng_prog_12_axis_3">Real Estate Finance: The real estate finance system – Appraisal and financing – Purposes and areas of appraisal</li>
+                <li data-translate="eng_prog_12_axis_4">Sales Appraisal: Real estate appraisal using the comparable sales method (previous sales) – Real estate appraisal using the income capitalization method</li>
+                <li data-translate="eng_prog_12_axis_5">Examples of problems facing real estate appraisers and their solutions according to International Standard Requirements</li>
+                <li data-translate="eng_prog_12_axis_6">Workshop – Practical on-site exercises for some available models:</li>
+                <li data-translate="eng_prog_12_axis_7">Performing a practical real estate appraisal for a villa or residential apartment</li>
+                <li data-translate="eng_prog_12_axis_8">Performing a practical real estate appraisal for a commercial building</li>
+                <li data-translate="eng_prog_12_axis_9">Performing a practical real estate appraisal for a hotel or hotel apartments</li>
               </ul>
               <a href="eng-real-estate-valuation.html" class="btn btn-primary mt-3">
-                <i class="fa fa-info-circle me-2"></i>View Full Program Details
+                <i class="fa fa-info-circle me-2"></i><span data-translate="view_full_program">View Full Program Details</span>
               </a>
             </div>
 
@@ -396,77 +408,77 @@
         <div class="col-lg-4">
           <div class="mb-5">
             <div class="bg-light rounded p-4">
-              <h4 class="mb-4">Program Information</h4>
+              <h4 class="mb-4" data-translate="program_info_title">Program Information</h4>
               <div class="d-flex align-items-center mb-3">
                 <i class="fa fa-user-tie fa-2x text-primary me-3"></i>
                 <div>
-                  <h6 class="mb-1">Expert Instructors</h6>
-                  <small>Industry Professionals</small>
+                  <h6 class="mb-1" data-translate="expert_instructors">Expert Instructors</h6>
+                  <small data-translate="industry_professionals">Industry Professionals</small>
                 </div>
               </div>
               <div class="d-flex align-items-center mb-3">
                 <i class="fa fa-clock fa-2x text-primary me-3"></i>
                 <div>
-                  <h6 class="mb-1">Flexible Schedule</h6>
-                  <small>Weekday & Weekend Options</small>
+                  <h6 class="mb-1" data-translate="flexible_schedule">Flexible Schedule</h6>
+                  <small data-translate="weekday_weekend">Weekday & Weekend Options</small>
                 </div>
               </div>
               <div class="d-flex align-items-center mb-3">
                 <i class="fa fa-certificate fa-2x text-primary me-3"></i>
                 <div>
-                  <h6 class="mb-1">Certification</h6>
-                  <small>Accredited Certificate</small>
+                  <h6 class="mb-1" data-translate="certification">Certification</h6>
+                  <small data-translate="accredited_cert">Accredited Certificate</small>
                 </div>
               </div>
               <div class="d-flex align-items-center mb-3">
                 <i class="fa fa-laptop fa-2x text-primary me-3"></i>
                 <div>
-                  <h6 class="mb-1">Practical Training</h6>
-                  <small>Hands-on Projects</small>
+                  <h6 class="mb-1" data-translate="practical_training">Practical Training</h6>
+                  <small data-translate="hands_on_projects">Hands-on Projects</small>
                 </div>
               </div>
               <a href="contact.html" class="btn btn-primary w-100 py-3 mt-3">
-                Enroll Now <i class="fa fa-arrow-right ms-2"></i>
+                <span data-translate="enroll_now">Enroll Now</span> <i class="fa fa-arrow-right ms-2"></i>
               </a>
             </div>
           </div>
 
           <div class="mb-5">
             <div class="bg-primary rounded p-4 text-white">
-              <h4 class="text-white mb-4">Why Choose Us?</h4>
-              <p class="text-white mb-3"><i class="fa fa-check-circle me-2"></i>Industry-recognized certification</p>
-              <p class="text-white mb-3"><i class="fa fa-check-circle me-2"></i>Expert engineering instructors</p>
-              <p class="text-white mb-3"><i class="fa fa-check-circle me-2"></i>Modern training facilities</p>
-              <p class="text-white mb-3"><i class="fa fa-check-circle me-2"></i>Practical project experience</p>
-              <p class="text-white mb-0"><i class="fa fa-check-circle me-2"></i>Career support services</p>
+              <h4 class="text-white mb-4" data-translate="why_choose_us">Why Choose Us?</h4>
+              <p class="text-white mb-3"><i class="fa fa-check-circle me-2"></i><span data-translate="industry_recognized">Industry-recognized certification</span></p>
+              <p class="text-white mb-3"><i class="fa fa-check-circle me-2"></i><span data-translate="expert_eng_instructors">Expert engineering instructors</span></p>
+              <p class="text-white mb-3"><i class="fa fa-check-circle me-2"></i><span data-translate="modern_facilities">Modern training facilities</span></p>
+              <p class="text-white mb-3"><i class="fa fa-check-circle me-2"></i><span data-translate="practical_experience">Practical project experience</span></p>
+              <p class="text-white mb-0"><i class="fa fa-check-circle me-2"></i><span data-translate="career_support">Career support services</span></p>
             </div>
           </div>
 
           <div class="mb-5">
             <div class="bg-light rounded p-4">
-              <h4 class="mb-4">Related Programs</h4>
+              <h4 class="mb-4" data-translate="related_programs">Related Programs</h4>
               <a href="program-project-management.html" class="d-block mb-3 text-decoration-none">
                 <div class="d-flex align-items-center">
                   <i class="fa fa-arrow-right text-primary me-2"></i>
-                  <span>Project Management</span>
+                  <span data-translate="project_management">Project Management</span>
                 </div>
               </a>
               <a href="program-quality.html" class="d-block mb-3 text-decoration-none">
                 <div class="d-flex align-items-center">
                   <i class="fa fa-arrow-right text-primary me-2"></i>
-                  <span>Quality Management</span>
+                  <span data-translate="quality_management">Quality Management</span>
                 </div>
               </a>
               <a href="program-safety-health.html" class="d-block mb-3 text-decoration-none">
                 <div class="d-flex align-items-center">
                   <i class="fa fa-arrow-right text-primary me-2"></i>
-                  <span>Safety & Health</span>
+                  <span data-translate="safety_health">Safety & Health</span>
                 </div>
               </a>
               <a href="diplomas.html" class="d-block text-decoration-none">
                 <div class="d-flex align-items-center">
                   <i class="fa fa-arrow-right text-primary me-2"></i>
-                  <span>View All Diplomas</span>
+                  <span data-translate="view_all_diplomas">View All Diplomas</span>
                 </div>
               </a>
             </div>
@@ -484,15 +496,15 @@
       <div class="container py-5">
           <div class="row g-5">
               <div class="col-lg-3 col-md-6">
-                  <h4 class="text-white mb-3">Quick Link</h4>
-                  <a class="btn btn-link" href="about.html">About Us</a>
-                  <a class="btn btn-link" href="contact.html">Contact Us</a>
+                  <h4 class="text-white mb-3"><span data-translate="footer_quick_links">Quick Link</span></h4>
+                  <a class="btn btn-link" href="about.html"><span data-translate="footer_about">About Us</span></a>
+                  <a class="btn btn-link" href="contact.html"><span data-translate="footer_contact">Contact Us</span></a>
                   <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
                   <a class="btn btn-link" href="terms.html">Terms & Condition</a>
                   <a class="btn btn-link" href="faqs.html">FAQs & Help</a>
               </div>
               <div class="col-lg-3 col-md-6">
-                  <h4 class="text-white mb-3">Contact</h4>
+                  <h4 class="text-white mb-3"><span data-translate="footer_contact_title">Contact</span></h4>
                   <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Egypt</p>
                   <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012</p>
                   <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
@@ -503,10 +515,10 @@
                   </div>
               </div>
               <div class="col-lg-3 col-md-6">
-                  <h4 class="text-white mb-3">Newsletter</h4>
-                  <p>Sign-up for our newsletter</p>
+                  <h4 class="text-white mb-3"><span data-translate="footer_newsletter">Newsletter</span></h4>
+                  <p><span data-translate="footer_newsletter_text">Sign-up for our newsletter</span></p>
                   <div class="position-relative mx-auto" style="max-width: 400px;">
-                      <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                      <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="<span data-translate="footer_email_placeholder">Your email</span>">
                       <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                   </div>
               </div>
@@ -516,7 +528,7 @@
           <div class="copyright">
               <div class="row">
                   <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                      &copy; <a class="border-bottom" href="#">Global Academy</a>, All Right Reserved.
+                      &copy; <a class="border-bottom" href="#">Global Academy</a>, <span data-translate="footer_rights">All Right Reserved</span>.
                   </div>
                   <div class="col-md-6 text-center text-md-end">
                       <div class="footer-menu">
@@ -545,5 +557,6 @@
 
   <!-- Main JavaScript -->
   <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 </html>

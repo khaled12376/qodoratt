@@ -2190,3 +2190,177 @@ body {
     font-size: 2rem;
   }
 }
+
+/*** Language Translation Enhancements ***/
+/* Language dropdown styling */
+.nav-item.dropdown .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+#currentLang {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Professional hover effects */
+.nav-link:hover {
+    color: var(--primary) !important;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary);
+    color: white !important;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+/* Enhanced button styling */
+.cta-button {
+    box-shadow: 0 4px 15px rgba(6, 125, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    box-shadow: 0 6px 20px rgba(6, 125, 234, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Smooth transitions for language switch */
+[data-translate] {
+    transition: opacity 0.3s ease;
+}
+
+/* Globe icon animation */
+.fa-globe {
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Professional card shadows */
+.feature-card, .about-card {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover, .about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* RTL Support for Arabic Language */
+html[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+}
+
+html[lang="ar"] body {
+    text-align: right;
+}
+
+/* Keep Navbar LTR (Left-to-Right) even in Arabic */
+html[lang="ar"] .navbar,
+html[lang="ar"] .navbar-nav,
+html[lang="ar"] .navbar-collapse {
+    direction: ltr;
+    text-align: left;
+}
+
+html[lang="ar"] .dropdown-menu {
+    direction: ltr;
+    text-align: left;
+}
+
+/* RTL Button adjustments - except navbar and footer */
+html[lang="ar"] .btn i:not(.navbar .btn i):not(.footer .btn i) {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+html[lang="ar"] .fa-arrow-right:not(.navbar .fa-arrow-right):not(.footer .fa-arrow-right) {
+    transform: rotate(180deg);
+}
+
+/* RTL List adjustments */
+html[lang="ar"] ul,
+html[lang="ar"] ol {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+/* RTL Icon adjustments - except navbar and footer */
+html[lang="ar"] .me-2:not(.navbar .me-2):not(.footer .me-2) {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+html[lang="ar"] .me-3:not(.navbar .me-3):not(.footer .me-3) {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+}
+
+html[lang="ar"] .ms-2:not(.navbar .ms-2):not(.footer .ms-2) {
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+}
+
+html[lang="ar"] .ms-3:not(.navbar .ms-3):not(.footer .ms-3) {
+    margin-right: 1rem !important;
+    margin-left: 0 !important;
+}
+
+/* RTL Text alignment */
+html[lang="ar"] .text-start {
+    text-align: right !important;
+}
+
+html[lang="ar"] .text-end {
+    text-align: left !important;
+}
+
+/* Keep Footer LTR (Left-to-Right) even in Arabic */
+html[lang="ar"] .footer,
+html[lang="ar"] .footer .container,
+html[lang="ar"] .footer .row {
+    direction: ltr;
+    text-align: left;
+}
+
+html[lang="ar"] .footer .btn-link {
+    text-align: left;
+}
+
+/* RTL Breadcrumb */
+html[lang="ar"] .breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+/* Keep Programs Showcase LTR */
+html[lang="ar"] .programs-showcase,
+html[lang="ar"] .programs-showcase .container,
+html[lang="ar"] .programs-showcase .header-carousel {
+    direction: ltr;
+    text-align: left;
+}
+
+/* RTL Carousel arrows - except programs showcase */
+html[lang="ar"] .owl-nav .owl-prev:not(.programs-showcase .owl-prev) {
+    left: auto;
+    right: 20px;
+}
+
+html[lang="ar"] .owl-nav .owl-next:not(.programs-showcase .owl-next) {
+    right: auto;
+    left: 20px;
+}
+
+/* Smooth transition for direction change */
+html {
+    transition: direction 0.3s ease;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -47,7 +47,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="533148242_122102107550975667_6846905199516547475_n.jpg" alt="Global Academy Logo" class="navbar-logo">
-            <h2 class="m-0 text-primary">Global Academy</h2>
+            <h2 class="m-0 text-primary" data-translate="academy_name">Global Academy</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -55,35 +55,49 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="index.html" class="nav-item nav-link" data-translate="nav_home" data-translate="nav_home">Home</a>
+                <a href="about.html" class="nav-item nav-link" data-translate="nav_about" data-translate="nav_about">About</a>
                 <div class="nav-item dropdown">
-                    <a href="programs.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'">Programs</a>
+                    <a href="programs.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'" data-translate="nav_programs" data-translate="nav_programs">Programs</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="engineering-programs.html" class="dropdown-item">Engineering Programs</a>
-                        <a href="program-leadership-management.html" class="dropdown-item">Leadership & Management</a>
-                        <a href="program-marketing.html" class="dropdown-item">Marketing Programs</a>
-                        <a href="program-quality.html" class="dropdown-item">Quality Programs</a>
-                        <a href="program-safety-health.html" class="dropdown-item">Safety & Health Programs</a>
-                        <a href="program-accounting-finance.html" class="dropdown-item">Accounting & Finance</a>
-                        <a href="program-procurement.html" class="dropdown-item">Procurement & Supply Chain</a>
-                        <a href="program-human-resources.html" class="dropdown-item">Human Resources</a>
+                        <a href="engineering-programs.html" class="dropdown-item" data-translate="nav_engineering">Engineering Programs</a>
+                        <a href="program-leadership-management.html" class="dropdown-item" data-translate="nav_leadership">Leadership & Management</a>
+                        <a href="program-marketing.html" class="dropdown-item" data-translate="nav_marketing">Marketing Programs</a>
+                        <a href="program-quality.html" class="dropdown-item" data-translate="nav_quality">Quality Programs</a>
+                        <a href="program-safety-health.html" class="dropdown-item" data-translate="nav_safety">Safety & Health Programs</a>
+                        <a href="program-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting">Accounting & Finance</a>
+                        <a href="program-procurement.html" class="dropdown-item" data-translate="nav_procurement">Procurement & Supply Chain</a>
+                        <a href="program-human-resources.html" class="dropdown-item" data-translate="nav_hr">Human Resources</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'">Diplomas</a>
+                    <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'" data-translate="nav_diplomas" data-translate="nav_diplomas">Diplomas</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="diploma-training-development.html" class="dropdown-item">Training & Development</a>
-                        <a href="diploma-accounting-finance.html" class="dropdown-item">Accounting & Finance</a>
-                        <a href="diploma-management-science.html" class="dropdown-item">Management Science</a>
-                        <a href="diploma-womens-leadership.html" class="dropdown-item">Women's Leadership</a>
-                        <a href="diploma-project-management.html" class="dropdown-item">Project Management</a>
+                        <a href="diploma-training-development.html" class="dropdown-item" data-translate="nav_training_diploma">Training & Development</a>
+                        <a href="diploma-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting_diploma">Accounting & Finance</a>
+                        <a href="diploma-management-science.html" class="dropdown-item" data-translate="nav_management_diploma">Management Science</a>
+                        <a href="diploma-womens-leadership.html" class="dropdown-item" data-translate="nav_women_diploma">Women's Leadership</a>
+                        <a href="diploma-project-management.html" class="dropdown-item" data-translate="nav_project_diploma">Project Management</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
-                Enroll Now <i class="fa fa-arrow-right ms-3"></i>
+                <a href="contact.html" class="nav-item nav-link" data-translate="nav_contact" data-translate="nav_contact">Contact</a>
+                            
+                <!-- Language Selector -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i>
+                        <span id="currentLang">EN</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end fade-down">
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('en'); return false;">
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('ar'); return false;">
+                            Arabic
+                        </a>
+                    </div>
+                </div></div>
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-translate="btn_enroll" data-translate="btn_enroll">Enroll Now <i class="fa fa-arrow-right ms-3"></i>
             </a>
         </div>
     </nav>
@@ -94,13 +108,13 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Procurement & Supply Chain</h1>
+                    <h1 class="display-3 text-white animated slideInDown" data-translate="procurement_title">Procurement & Supply Chain</h1>
                     <p class="fs-5 text-light mb-4">Strategic Sourcing • Logistics Management • Vendor Relations</p>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="programs.html">Programs</a></li>
-                            <li class="breadcrumb-item text-white active">Procurement & Supply Chain</li>
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html" data-translate="nav_home">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="programs.html" data-translate="nav_programs">Programs</a></li>
+                            <li class="breadcrumb-item text-white active" data-translate="procurement_title">Procurement & Supply Chain</li>
                         </ol>
                     </nav>
                 </div>
@@ -115,19 +129,19 @@
             <div class="row g-5">
                 <div class="col-lg-8">
                     <div class="mb-5">
-                        <h2 class="mb-4">Program Overview</h2>
+                        <h2 class="mb-4"><span data-translate="program_overview">Program Overview</span></h2>
                         <p class="mb-4">Our Procurement & Supply Chain Programs provide comprehensive training in modern procurement practices, supply chain management, and warehouse operations. Master strategic sourcing, contract management, risk mitigation, and build effective procurement strategies that align with organizational goals and optimize supply chain performance. Our curriculum covers 6 specialized programs designed to develop procurement and supply chain professionals at all levels.</p>
                         
                         <div class="row g-4 mb-4">
                             <div class="col-md-6">
                                 <div class="bg-light rounded p-4 h-100">
-                                    <h5 class="text-primary mb-3"><i class="fa fa-clock me-2"></i>Duration</h5>
+                                    <h5 class="text-primary mb-3"><i class="fa fa-clock me-2"></i><span data-translate="duration_title">Duration</span></h5>
                                     <p class="mb-0">6 comprehensive programs<br>Flexible scheduling available</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="bg-primary rounded p-4 h-100 text-white">
-                                    <h5 class="text-white mb-3"><i class="fa fa-certificate me-2"></i>Certification</h5>
+                                    <h5 class="text-white mb-3"><i class="fa fa-certificate me-2"></i><span data-translate="certification_title">Certification</span></h5>
                                     <p class="mb-0">Procurement Professional Certificate<br>Recognized Accreditation</p>
                                 </div>
                             </div>
@@ -138,9 +152,9 @@
                         <!-- Program 1 -->
                         <div class="mb-4 p-4 bg-light rounded">
                             <h4 class="text-primary mb-3">1. Local and Foreign Procurement Policies and Procedures Systems</h4>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <p class="mb-3">Identify the integrated information and systems through local and foreign procurement policies and procedures systems and their technical aspects.</p>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Fundamentals of procurement practices (procurement policies)</li>
                                 <li>Methods of internal and foreign procurement – and selection of suppliers</li>
@@ -159,7 +173,7 @@
                         <!-- Program 2 -->
                         <div class="mb-4 p-4 bg-light rounded">
                             <h4 class="text-primary mb-3">2. Public Procurement Management in the Digital Technology Era</h4>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Understand the nature of e-procurement management</li>
                                 <li>Master and understand modern e-procurement systems</li>
@@ -168,7 +182,7 @@
                                 <li>Understand how to implement an e-procurement system</li>
                                 <li>Learn how to manage an e-procurement system</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Traditional procurement procedures</li>
                                 <li>Developing digital procurement management</li>
@@ -184,7 +198,7 @@
                         <!-- Program 3 -->
                         <div class="mb-4 p-4 bg-light rounded">
                             <h4 class="text-primary mb-3">3. Modern and Advanced Management of Procurement and Contracts</h4>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>In-depth study of the contract negotiation process and the related documents</li>
                                 <li>Study of supply contracts and how to manage and conclude contract operations</li>
@@ -196,7 +210,7 @@
                                 <li>Detailed steps for tender issuance systems and their detailed procedures</li>
                                 <li>Awareness of the rules for evaluating bids and analyzing offers submitted for tender award</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Advanced procurement management</li>
                                 <li>Fundamentals of procurement practices (procurement policies) according to international standards</li>
@@ -217,7 +231,7 @@
                         <!-- Program 4 -->
                         <div class="mb-4 p-4 bg-light rounded">
                             <h4 class="text-primary mb-3">4. Supply Chain Risk Management</h4>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Determine the level of risk in supply chains</li>
                                 <li>Develop an understanding of supply risks and their impact on sustainable business</li>
@@ -229,7 +243,7 @@
                                 <li>Recognize the cultural, ethical, and legal standards to consider when planning supply chain risk management</li>
                                 <li>Learn how to conduct risk analysis in supply chains and apply a range of risk management tools and techniques</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Supply chain and risk management</li>
                                 <li>Planning the risk process in supply chains</li>
@@ -246,7 +260,7 @@
                         <!-- Program 5 -->
                         <div class="mb-4 p-4 bg-light rounded">
                             <h4 class="text-primary mb-3">5. Effective Management of Procurement Contracts and Claims Assessment and Settlement</h4>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Introduce the participant to how to manage and conclude contract operations</li>
                                 <li>Provide the participant with modern purchasing skills and inform them of the importance of the purchasing function for the organization</li>
@@ -257,7 +271,7 @@
                                 <li>Confronting potential contract problems during its management</li>
                                 <li>How to write contractual terms</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Management of direct purchase and supply contracts</li>
                                 <li>Modern procurement systems</li>
@@ -274,7 +288,7 @@
                         <!-- Program 6 -->
                         <div class="mb-4 p-4 bg-light rounded">
                             <h4 class="text-primary mb-3">6. Certified Warehouse Manager</h4>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Enrich the participants' technical knowledge in supply chain and warehouse management within their work environment, which is concerned with accomplishing tasks to the fullest extent and within a low-cost scope over the long term</li>
                                 <li>Inform participants about warehouse operations, methods of classifying, storing, and standardizing materials, managing warehouse operations, and inventory planning</li>
@@ -286,7 +300,7 @@
                                 <li>Applying advanced practices in planning, organizing, and controlling materials and warehouses, and managing storage</li>
                                 <li>Study of storage-related risks, the safety tools that must be available in the warehouse, and identifying the most important precautions to avoid these risks and deal with them after they occur</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Modern strategies for improving warehouse management</li>
                                 <li>Planning and organizing warehouse management in accordance with ISO requirements</li>
@@ -335,8 +349,7 @@
                                 Global Academy, Alexandria
                             </div>
                         </div>
-                        <a href="contact.html" class="btn btn-primary w-100 py-3">
-                            Enroll Now <i class="fa fa-arrow-right ms-2"></i>
+                        <a href="contact.html" class="btn btn-primary w-100 py-3" data-translate="btn_enroll" data-translate="btn_enroll">Enroll Now <i class="fa fa-arrow-right ms-2"></i>
                         </a>
                     </div>
 
@@ -362,15 +375,15 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <h4 class="text-white mb-3"><span data-translate="footer_quick_links">Quick Link</span></h4>
+                    <a class="btn btn-link" href="about.html"><span data-translate="footer_about">About Us</span></a>
+                    <a class="btn btn-link" href="contact.html"><span data-translate="footer_contact">Contact Us</span></a>
                     <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
                     <a class="btn btn-link" href="terms.html">Terms & Condition</a>
                     <a class="btn btn-link" href="faqs.html">FAQs & Help</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
+                    <h4 class="text-white mb-3"><span data-translate="footer_contact_title">Contact</span></h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Alexandria, Egypt</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+20 123 456 7890</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@globalacademy.com</p>
@@ -382,10 +395,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <h4 class="text-white mb-3"><span data-translate="footer_newsletter">Newsletter</span></h4>
                     <p>Stay updated with our latest programs</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="<span data-translate="footer_email_placeholder">Your email</span>">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div>
@@ -395,7 +408,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="index.html">Global Academy</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="index.html">Global Academy</a>, <span data-translate="footer_rights">All Right Reserved</span>.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -422,6 +435,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>

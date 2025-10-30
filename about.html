@@ -48,7 +48,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="533148242_122102107550975667_6846905199516547475_n.jpg" alt="Global Academy Logo" class="navbar-logo">
-            <h2 class="m-0 text-primary">Global Academy</h2>
+            <h2 class="m-0 text-primary" data-translate="academy_name">Global Academy</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -57,46 +57,58 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <!-- Regular Links -->
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About</a>
+                <a href="index.html" class="nav-item nav-link" data-translate="nav_home">Home</a>
+                <a href="about.html" class="nav-item nav-link active" data-translate="nav_about">About</a>
 
                 <!-- Programs Dropdown -->
                 <div class="nav-item dropdown">
                     <a href="programs.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                        onclick="window.location.href='programs.html'">Programs</a>
+                        onclick="window.location.href='programs.html'" data-translate="nav_programs">Programs</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="#" class="dropdown-item">Leadership & Management</a>
-                        <a href="#" class="dropdown-item">Marketing Programs</a>
-                        <a href="#" class="dropdown-item">Quality Programs</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_leadership">Leadership & Management</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_marketing">Marketing Programs</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_quality">Quality Programs</a>
                         <!-- <a href="#" class="dropdown-item">Occupational Safety & Health</a> -->
-                        <a href="#" class="dropdown-item">Accounting & Finance</a>
-                        <a href="#" class="dropdown-item">Procurement & Supply Chain</a>
-                        <a href="#" class="dropdown-item">Human Resources</a>
-                        <a href="#" class="dropdown-item">Engineering Programs</a>
-                        <a href="#" class="dropdown-item">Quality Programs</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_accounting">Accounting & Finance</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_procurement">Procurement & Supply Chain</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_hr">Human Resources</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_engineering">Engineering Programs</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_safety">Safety & Health Programs</a>
                     </div>
                 </div>
 
                 <!-- Diplomas Dropdown -->
                 <div class="nav-item dropdown">
                     <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                      onclick="window.location.href='diplomas.html'">Diplomas</a>
+                      onclick="window.location.href='diplomas.html'" data-translate="nav_diplomas">Diplomas</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="#" class="dropdown-item">Training and Development</a>
-                        <a href="#" class="dropdown-item">Accounting and Finance</a>
-                        <a href="#" class="dropdown-item">Management Sciences</a>
-                        <a href="#" class="dropdown-item">Women's Leadership</a>
-                        <a href="#" class="dropdown-item">Project Management</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_training_diploma">Training and Development</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_accounting_diploma">Accounting and Finance</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_management_diploma">Management Sciences</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_women_diploma">Women's Leadership</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_project_diploma">Project Management</a>
                     </div>
                 </div>
 
 
                 <!-- Contact Link -->
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact.html" class="nav-item nav-link" data-translate="nav_contact">Contact</a>
+                
+                <!-- Language Selector -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i>
+                        <span id="currentLang">EN</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end fade-down">
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('en'); return false;">English</a>
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('ar'); return false;">Arabic</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Button -->
-            <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+            <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-translate="btn_join">
                 Join Now <i class="fa fa-arrow-right ms-3"></i>
             </a>
         </div>
@@ -111,13 +123,13 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">About Us</h1>
-                    <p class="fs-5 text-light mb-4">Excellence in Education • Alexandria, Egypt</p>
+                    <h1 class="display-3 text-white animated slideInDown" data-translate="about_title">About Us</h1>
+                    <p class="fs-5 text-light mb-4" data-translate="about_subtitle">Excellence in Education � Alexandria, Egypt</p>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="programs.html">Programs</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="diplomas.html">Diplomas</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html" data-translate="nav_home">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="programs.html" data-translate="nav_programs">Programs</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="diplomas.html" data-translate="nav_diplomas">Diplomas</a></li>
                         </ol>
                     </nav>
                 </div>
@@ -130,9 +142,9 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h6 class="section-title bg-white text-center text-primary px-3">About Global Academy</h6>
-                <h2 class="mb-3">Leading the Future of Professional Development</h2>
-                <p class="text-muted">Located in Alexandria, Egypt - Empowering professionals worldwide</p>
+                <h6 class="section-title bg-white text-center text-primary px-3" data-translate="about_badge">About Global Academy</h6>
+                <h2 class="mb-3" data-translate="about_heading">Leading the Future of Professional Development</h2>
+                <p class="text-muted" data-translate="about_subtitle">Located in Alexandria, Egypt - Empowering professionals worldwide</p>
             </div>
             <div class="row g-4 mb-5">
                 <!-- Who We Are -->
@@ -140,8 +152,8 @@
                     <div class="service-item text-center pt-3 h-100">
                         <div class="p-4">
                             <i class="fa fa-3x fa-users text-primary mb-4"></i>
-                            <h5 class="mb-3">Who We Are</h5>
-                            <p>Global Academy is a premier institution dedicated to empowering professionals and organizations through innovative training and development programs. We are committed to fostering excellence and driving transformation in the modern workplace.</p>
+                            <h5 class="mb-3" data-translate="about_who_title">Who We Are</h5>
+                            <p data-translate="about_who_text">Global Academy is a premier institution dedicated to empowering professionals and organizations through innovative training and development programs. We are committed to fostering excellence and driving transformation in the modern workplace.</p>
                         </div>
                     </div>
                 </div>
@@ -151,8 +163,8 @@
                     <div class="service-item text-center pt-3 h-100">
                         <div class="p-4">
                             <i class="fa fa-3x fa-bullseye text-primary mb-4"></i>
-                            <h5 class="mb-3">Our Goal</h5>
-                            <p>To bridge the gap between theoretical knowledge and practical application by delivering world-class training programs that enhance skills, boost productivity, and accelerate career growth for professionals across all industries.</p>
+                            <h5 class="mb-3" data-translate="about_goal_title">Our Goal</h5>
+                            <p data-translate="about_goal_text">To bridge the gap between theoretical knowledge and practical application by delivering world-class training programs that enhance skills, boost productivity, and accelerate career growth for professionals across all industries.</p>
                         </div>
                     </div>
                 </div>
@@ -162,8 +174,8 @@
                     <div class="service-item text-center pt-3 h-100">
                         <div class="p-4">
                             <i class="fa fa-3x fa-eye text-primary mb-4"></i>
-                            <h5 class="mb-3">Our Vision</h5>
-                            <p>To become the global leader in professional development and training, creating a world where every individual and organization has access to transformative learning experiences that unlock their full potential.</p>
+                            <h5 class="mb-3" data-translate="about_vision_title">Our Vision</h5>
+                            <p data-translate="about_vision_text">To become the global leader in professional development and training, creating a world where every individual and organization has access to transformative learning experiences that unlock their full potential.</p>
                         </div>
                     </div>
                 </div>
@@ -175,29 +187,28 @@
                     <div class="bg-light rounded p-4 h-100">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fa fa-2x fa-briefcase text-primary me-3"></i>
-                            <h4 class="mb-0 text-primary">Professional Programs</h4>
+                            <h4 class="mb-0 text-primary" data-translate="about_programs_title">Professional Programs</h4>
                         </div>
-                        <p class="mb-3">Our comprehensive training programs are designed to address the evolving needs of today's workforce. We offer specialized courses in:</p>
+                        <p class="mb-3" data-translate="about_programs_desc">Our comprehensive training programs are designed to address the evolving needs of today's workforce. We offer specialized courses in:</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Leadership & Management</li>
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Marketing Programs</li>
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Quality Programs</li>
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Accounting & Finance</li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i><span data-translate="prog_leadership">Leadership & Management</span></li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i><span data-translate="prog_marketing">Marketing Programs</span></li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i><span data-translate="prog_quality">Quality Programs</span></li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i><span data-translate="prog_accounting">Accounting & Finance</span></li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Procurement & Supply Chain</li>
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Human Resources</li>
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Engineering Programs</li>
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Safety & Health</li>
-                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i>Quality Programs</li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i><span data-translate="prog_procurement">Procurement & Supply Chain</span></li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i><span data-translate="prog_hr">Human Resources</span></li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i><span data-translate="prog_engineering">Engineering Programs</span></li>
+                                    <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i><span data-translate="prog_safety">Safety & Health</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <a href="programs.html" class="btn btn-primary mt-3">Explore Programs <i class="fa fa-arrow-right ms-2"></i></a>
+                        <a href="programs.html" class="btn btn-primary mt-3" data-translate="explore_programs_btn">Explore Programs <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
 
@@ -205,21 +216,21 @@
                     <div class="bg-primary rounded p-4 h-100 text-white">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fa fa-2x fa-certificate text-white me-3"></i>
-                            <h4 class="mb-0 text-white">Professional Diplomas</h4>
+                            <h4 class="mb-0 text-white" data-translate="about_diplomas_title">Professional Diplomas</h4>
                         </div>
-                        <p class="mb-3">Our internationally recognized diploma programs provide comprehensive education and certification in key professional areas:</p>
+                        <p class="mb-3" data-translate="about_diplomas_desc">Our internationally recognized diploma programs provide comprehensive education and certification in key professional areas:</p>
                         <div class="row">
                             <div class="col-12">
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i>Training and Development Diploma</li>
-                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i>Accounting and Finance Diploma</li>
-                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i>Management Sciences Diploma</li>
-                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i>Women's Leadership Diploma</li>
-                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i>Project Management Diploma</li>
+                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i><span data-translate="dip_training">Training and Development Diploma</span></li>
+                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i><span data-translate="dip_accounting">Accounting and Finance Diploma</span></li>
+                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i><span data-translate="dip_management">Management Sciences Diploma</span></li>
+                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i><span data-translate="dip_women">Women's Leadership Diploma</span></li>
+                                    <li class="mb-2"><i class="fa fa-star text-white me-2"></i><span data-translate="dip_project">Project Management Diploma</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <a href="diplomas.html" class="btn btn-light mt-3">Explore Diplomas <i class="fa fa-arrow-right ms-2"></i></a>
+                        <a href="diplomas.html" class="btn btn-light mt-3" data-translate="explore_diplomas_btn">Explore Diplomas <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -231,9 +242,9 @@
     <div class="container-xxl py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h6 class="section-title bg-light text-center text-primary px-3">Our Accreditations</h6>
-                <h2 class="mb-3">Trusted by Leading Educational Institutions</h2>
-                <p>Global Academy is accredited and recognized by prestigious international organizations</p>
+                <h6 class="section-title bg-light text-center text-primary px-3" data-translate="about_accred_title">Our Accreditations</h6>
+                <h2 class="mb-3" data-translate="about_accred_heading">Trusted by Leading Educational Institutions</h2>
+                <p data-translate="about_accred_text">Global Academy is accredited and recognized by prestigious international organizations</p>
             </div>
             <div class="row g-4 justify-content-center align-items-center">
                 <!-- MTC Global -->
@@ -296,15 +307,15 @@
                 <div class="container py-5">
                     <div class="row g-5">
                         <div class="col-lg-3 col-md-6">
-                            <h4 class="text-white mb-3">Quick Link</h4>
-                            <a class="btn btn-link" href="about.html">About Us</a>
-                            <a class="btn btn-link" href="contact.html">Contact Us</a>
-                            <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
-                            <a class="btn btn-link" href="terms.html">Terms & Condition</a>
-                            <a class="btn btn-link" href="faqs.html">FAQs & Help</a>
+                            <h4 class="text-white mb-3" data-translate="footer_quick_link">Quick Link</h4>
+                            <a class="btn btn-link" href="about.html" data-translate="footer_about">About Us</a>
+                            <a class="btn btn-link" href="contact.html" data-translate="footer_contact_us">Contact Us</a>
+                            <a class="btn btn-link" href="privacy.html" data-translate="footer_privacy">Privacy Policy</a>
+                            <a class="btn btn-link" href="terms.html" data-translate="footer_terms">Terms & Condition</a>
+                            <a class="btn btn-link" href="faqs.html" data-translate="footer_faqs">FAQs & Help</a>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <h4 class="text-white mb-3">Contact</h4>
+                            <h4 class="text-white mb-3" data-translate="footer_contact_title">Contact</h4>
                             <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Egypt</p>
                             <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012</p>
                             <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
@@ -341,12 +352,11 @@
                         </div>
                         -->
                         <div class="col-lg-3 col-md-6">
-                            <h4 class="text-white mb-3">Newsletter</h4>
-                            <p>Sign-up for our newsletter</p>
+                            <h4 class="text-white mb-3" data-translate="footer_newsletter">Newsletter</h4>
+                            <p data-translate="footer_newsletter_text">Stay updated with our latest programs</p>
                             <div class="position-relative mx-auto" style="max-width: 400px;">
-                                <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button"
-                                    class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                                <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" data-translate-placeholder="footer_email_placeholder">
+                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-translate="footer_signup">SignUp</button>
                             </div>
                         </div>
                     </div>
@@ -355,7 +365,7 @@
                     <div class="copyright">
                         <div class="row">
                             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                &copy; <a class="border-bottom" href="#">Global Academy</a>, All Right Reserved.
+                                &copy; <a class="border-bottom" href="#">Global Academy</a>, <span data-translate="footer_rights">All Right Reserved</span>.
                             </div>
                             <div class="col-md-6 text-center text-md-end">
                                 <div class="footer-menu">
@@ -386,6 +396,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>

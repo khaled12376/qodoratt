@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -47,7 +47,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="533148242_122102107550975667_6846905199516547475_n.jpg" alt="Global Academy Logo" class="navbar-logo">
-            <h2 class="m-0 text-primary">Global Academy</h2>
+            <h2 class="m-0 text-primary" data-translate="academy_name">Global Academy</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -55,35 +55,50 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="index.html" class="nav-item nav-link" data-translate="nav_home" data-translate="nav_home">Home</a>
+                <a href="about.html" class="nav-item nav-link" data-translate="nav_about" data-translate="nav_about">About</a>
                 <div class="nav-item dropdown">
-                    <a href="programs.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'">Programs</a>
+                    <a href="programs.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'" data-translate="nav_programs" data-translate="nav_programs">Programs</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="engineering-programs.html" class="dropdown-item">Engineering Programs</a>
-                        <a href="program-leadership-management.html" class="dropdown-item">Leadership & Management</a>
-                        <a href="program-marketing.html" class="dropdown-item">Marketing Programs</a>
-                        <a href="program-quality.html" class="dropdown-item">Quality Programs</a>
-                        <a href="program-safety-health.html" class="dropdown-item">Safety & Health Programs</a>
-                        <a href="program-accounting-finance.html" class="dropdown-item">Accounting & Finance</a>
-                        <a href="program-procurement.html" class="dropdown-item">Procurement & Supply Chain</a>
-                        <a href="program-human-resources.html" class="dropdown-item">Human Resources</a>
+                        <a href="engineering-programs.html" class="dropdown-item" data-translate="nav_engineering">Engineering Programs</a>
+                        <a href="program-leadership-management.html" class="dropdown-item" data-translate="nav_leadership">Leadership & Management</a>
+                        <a href="program-marketing.html" class="dropdown-item" data-translate="nav_marketing">Marketing Programs</a>
+                        <a href="program-quality.html" class="dropdown-item" data-translate="nav_quality">Quality Programs</a>
+                        <a href="program-safety-health.html" class="dropdown-item" data-translate="nav_safety">Safety & Health Programs</a>
+                        <a href="program-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting">Accounting & Finance</a>
+                        <a href="program-procurement.html" class="dropdown-item" data-translate="nav_procurement">Procurement & Supply Chain</a>
+                        <a href="program-human-resources.html" class="dropdown-item" data-translate="nav_hr">Human Resources</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'">Diplomas</a>
+                    <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'" data-translate="nav_diplomas" data-translate="nav_diplomas">Diplomas</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="diploma-training-development.html" class="dropdown-item">Training & Development</a>
-                        <a href="diploma-accounting-finance.html" class="dropdown-item">Accounting & Finance</a>
-                        <a href="diploma-management-science.html" class="dropdown-item">Management Science</a>
-                        <a href="diploma-womens-leadership.html" class="dropdown-item">Women's Leadership</a>
-                        <a href="diploma-project-management.html" class="dropdown-item">Project Management</a>
+                        <a href="diploma-training-development.html" class="dropdown-item" data-translate="nav_training_diploma">Training & Development</a>
+                        <a href="diploma-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting_diploma">Accounting & Finance</a>
+                        <a href="diploma-management-science.html" class="dropdown-item" data-translate="nav_management_diploma">Management Science</a>
+                        <a href="diploma-womens-leadership.html" class="dropdown-item" data-translate="nav_women_diploma">Women's Leadership</a>
+                        <a href="diploma-project-management.html" class="dropdown-item" data-translate="nav_project_diploma">Project Management</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact.html" class="nav-item nav-link" data-translate="nav_contact" data-translate="nav_contact" data-translate="nav_contact">Contact</a>
+                
+                <!-- Language Selector -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i>
+                        <span id="currentLang">EN</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end fade-down">
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('en'); return false;">
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('ar'); return false;">
+                            <i class="fas fa-flag me-2"></i>العربية
+                        </a>
+                    </div>
+                </div>
             </div>
-            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
-                Enroll Now <i class="fa fa-arrow-right ms-3"></i>
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-translate="btn_enroll" data-translate="btn_enroll" data-translate="btn_enroll">Enroll Now <i class="fa fa-arrow-right ms-3"></i>
             </a>
         </div>
     </nav>
@@ -94,12 +109,12 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Safety & Health Programs</h1>
+                    <h1 class="display-3 text-white animated slideInDown" data-translate="safety_title">Safety & Health Programs</h1>
                     <p class="fs-5 text-light mb-4">Workplace Safety • Occupational Health • Risk Management</p>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="programs.html">Programs</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html" data-translate="nav_home">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="programs.html" data-translate="nav_programs">Programs</a></li>
                             <li class="breadcrumb-item text-white active">Safety & Health</li>
                         </ol>
                     </nav>
@@ -115,8 +130,8 @@
             <div class="row g-5">
                 <div class="col-lg-12">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="section-title bg-white text-center text-primary px-3">Programs</h6>
-                        <h1 class="mb-5">Safety & Health Programs</h1>
+                        <h6 class="section-title bg-white text-center text-primary px-3" data-translate="nav_programs">Programs</h6>
+                        <h1 class="mb-5" data-translate="safety_title">Safety & Health Programs</h1>
                     </div>
 
                     <div class="programs-list">
@@ -127,14 +142,14 @@
                                     <h4 class="text-primary mb-3">1. The Role of Execution Engineers in Safety Implementation</h4>
                                 </div>
                             </div>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Provide engineers with knowledge of engineering supervision procedures in accordance with the laws and regulations governing quality and implementing them on projects.</li>
                                 <li>Understand the concept of professional occupational safety and health and the implementation of its concepts on projects.</li>
                                 <li>Familiarize themselves with the tasks and responsibilities of a safety engineer and occupational safety and health procedures according to the requirements of the Egyptian labor law and the requirements of international standards.</li>
                                 <li>Understand the occupational safety and health requirements on projects according to Egyptian Labor Law No. 12 of 2003.</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>The role of the consultant office and engineering supervision in the responsibility of implementing safety</li>
                                 <li>Laws regulating engineering supervision</li>
@@ -160,14 +175,14 @@
                                     <h4 class="text-primary mb-3">2. Occupational Safety and Health</h4>
                                 </div>
                             </div>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Improve and enhance safety knowledge for engineers and technicians working in the field or technical office</li>
                                 <li>Understand occupational safety and health application in industrial, professional, and construction facilities</li>
                                 <li>Familiarize participants with international standards (ISO-45001-2018) in occupational safety and health management systems</li>
                                 <li>Provide all legally required professional safety and health requirements in construction projects and industrial facilities</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Occupational safety and health requirements according to Egyptian Labor Law No. 12 of 2003</li>
                                 <li>Safety and health management systems</li>
@@ -196,7 +211,7 @@
                                     <h4 class="text-primary mb-3">3. Certified Occupational Safety and Health Supervisor</h4>
                                 </div>
                             </div>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Understand the occupational safety and health application system in industrial, professional, and construction facilities.</li>
                                 <li>Knowledge of accidents, occupational hazards and how to evaluate risks and take preventive measures to avoid accidents.</li>
@@ -204,7 +219,7 @@
                                 <li>Understand the requirements and standards of the Egyptian labor law and international occupational safety and health standards.</li>
                                 <li>Integrate a safe management system throughout the project phases (planning and design, implementation, operation and exit).</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>The occupational health and safety management system</li>
                                 <li>Basics of Egyptian labor law and occupational safety requirements</li>
@@ -233,14 +248,14 @@
                                     <h4 class="text-primary mb-3">4. Securing Work at Heights</h4>
                                 </div>
                             </div>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Familiarize engineers and technicians with all risks they may encounter while working at heights on projects and the appropriate means for maintaining their safety.</li>
                                 <li>Enable participants to identify the requirements for each tool and equipment used in work at heights.</li>
                                 <li>Provide all health and safety requirements during work at heights, starting with how to perform safe work and carry out inspection of equipment.</li>
                                 <li>Identify how to prepare and evaluate work at heights plans to ensure workers' safety.</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Introduction to occupational safety and health and the concepts of work at heights</li>
                                 <li>Definition of work at heights - work at heights according to the Egyptian labor law</li>
@@ -262,7 +277,7 @@
                         <!-- Program 5 -->
                         <div class="mb-4 p-4 bg-light rounded">
                             <h4 class="text-primary mb-3">5. Insulation and Protection of Concrete Structures</h4>
-                            <h6 class="fw-bold mb-2">Objectives:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="objectives_title">Objectives:</span></h6>
                             <ul class="mb-3">
                                 <li>Familiarize participants with sources of corrosion in concrete and their effects.</li>
                                 <li>Learn how to treat cracks, strengthening and reinforcing concrete structures.</li>
@@ -271,7 +286,7 @@
                                 <li>Learn about waterproofing and moisture insulation in foundations and roofs.</li>
                                 <li>Understand the quality of insulation implementation and necessary tests.</li>
                             </ul>
-                            <h6 class="fw-bold mb-2">Main Axes:</h6>
+                            <h6 class="fw-bold mb-2"><span data-translate="main_axes_title">Main Axes:</span></h6>
                             <ul>
                                 <li>Review of concrete structures and all their components with theoretical engineering foundations and concepts.</li>
                                 <li>Sources of concrete corrosion and their effects on concrete structures.</li>
@@ -347,15 +362,15 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <h4 class="text-white mb-3"><span data-translate="footer_quick_links">Quick Link</span></h4>
+                    <a class="btn btn-link" href="about.html"><span data-translate="footer_about">About Us</span></a>
+                    <a class="btn btn-link" href="contact.html"><span data-translate="footer_contact">Contact Us</span></a>
                     <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
                     <a class="btn btn-link" href="terms.html">Terms & Condition</a>
                     <a class="btn btn-link" href="faqs.html">FAQs & Help</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
+                    <h4 class="text-white mb-3"><span data-translate="footer_contact_title">Contact</span></h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Alexandria, Egypt</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+20 123 456 7890</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@globalacademy.com</p>
@@ -367,10 +382,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <h4 class="text-white mb-3"><span data-translate="footer_newsletter">Newsletter</span></h4>
                     <p>Stay updated with our latest programs</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="<span data-translate="footer_email_placeholder">Your email</span>">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div>
@@ -380,7 +395,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="index.html">Global Academy</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="index.html">Global Academy</a>, <span data-translate="footer_rights">All Right Reserved</span>.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -407,6 +422,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>

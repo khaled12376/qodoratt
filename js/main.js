@@ -144,18 +144,18 @@
     $('#toggleProgramsBtn').on('click', function() {
         const hiddenPrograms = $('.hidden-program');
         const btn = $(this);
-        const icon = btn.find('i');
+        const currentLang = localStorage.getItem('language') || 'en';
         
         if (hiddenPrograms.first().is(':visible')) {
             // Hide programs
             hiddenPrograms.fadeOut(400);
-            btn.html('<i class="fas fa-plus me-2"></i>Show All Programs');
-            icon.removeClass('fa-minus').addClass('fa-plus');
+            const showText = currentLang === 'ar' ? 'عرض كل البرامج' : 'Show All Programs';
+            btn.html('<i class="fas fa-plus me-2"></i>' + showText);
         } else {
             // Show programs
             hiddenPrograms.fadeIn(400);
-            btn.html('<i class="fas fa-minus me-2"></i>Show Less Programs');
-            icon.removeClass('fa-plus').addClass('fa-minus');
+            const hideText = currentLang === 'ar' ? 'عرض أقل' : 'Show Less Programs';
+            btn.html('<i class="fas fa-minus me-2"></i>' + hideText);
         }
     });
 
@@ -163,18 +163,18 @@
     $('#toggleDiplomasBtn').on('click', function() {
         const hiddenDiplomas = $('.hidden-diploma');
         const btn = $(this);
-        const icon = btn.find('i');
+        const currentLang = localStorage.getItem('language') || 'en';
         
         if (hiddenDiplomas.first().is(':visible')) {
             // Hide diplomas
             hiddenDiplomas.fadeOut(400);
-            btn.html('<i class="fas fa-plus me-2"></i>Show All Diplomas');
-            icon.removeClass('fa-minus').addClass('fa-plus');
+            const showText = currentLang === 'ar' ? 'عرض كل الدبلومات' : 'Show All Diplomas';
+            btn.html('<i class="fas fa-plus me-2"></i>' + showText);
         } else {
             // Show diplomas
             hiddenDiplomas.fadeIn(400);
-            btn.html('<i class="fas fa-minus me-2"></i>Show Less Diplomas');
-            icon.removeClass('fa-plus').addClass('fa-minus');
+            const hideText = currentLang === 'ar' ? 'عرض أقل' : 'Show Less Diplomas';
+            btn.html('<i class="fas fa-minus me-2"></i>' + hideText);
         }
     });
     

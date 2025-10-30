@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Global Academy - Management Programs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="management, training, professional development" name="keywords">
+    <meta content="Comprehensive Management Programs at Global Academy Alexandria" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="533148242_122102107550975667_6846905199516547475_n.jpg" alt="Global Academy Logo" class="navbar-logo">
+            <h2 class="m-0 text-primary" data-translate="academy_name">Global Academy</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link" data-translate="nav_home" data-translate="nav_home">Home</a>
+                <a href="about.html" class="nav-item nav-link" data-translate="nav_about" data-translate="nav_about">About</a>
+                <div class="nav-item dropdown">
+                    <a href="programs.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'" data-translate="nav_programs" data-translate="nav_programs">Programs</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="engineering-programs.html" class="dropdown-item" data-translate="nav_engineering">Engineering Programs</a>
+                        <a href="program-leadership-management.html" class="dropdown-item" data-translate="nav_leadership">Leadership & Management</a>
+                        <a href="program-marketing.html" class="dropdown-item" data-translate="nav_marketing">Marketing Programs</a>
+                        <a href="program-quality.html" class="dropdown-item" data-translate="nav_quality">Quality Programs</a>
+                        <a href="program-safety-health.html" class="dropdown-item" data-translate="nav_safety">Safety & Health Programs</a>
+                        <a href="program-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting">Accounting & Finance</a>
+                        <a href="program-procurement.html" class="dropdown-item" data-translate="nav_procurement">Procurement & Supply Chain</a>
+                        <a href="program-human-resources.html" class="dropdown-item" data-translate="nav_hr">Human Resources</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'" data-translate="nav_diplomas" data-translate="nav_diplomas">Diplomas</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="diploma-training-development.html" class="dropdown-item" data-translate="nav_training_diploma">Training & Development</a>
+                        <a href="diploma-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting_diploma">Accounting & Finance</a>
+                        <a href="diploma-management-science.html" class="dropdown-item" data-translate="nav_management_diploma">Management Science</a>
+                        <a href="diploma-womens-leadership.html" class="dropdown-item" data-translate="nav_women_diploma">Women's Leadership</a>
+                        <a href="diploma-project-management.html" class="dropdown-item" data-translate="nav_project_diploma">Project Management</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link" data-translate="nav_contact" data-translate="nav_contact">Contact</a>
+                
+                <!-- Language Selector -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i>
+                        <span id="currentLang">EN</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end fade-down">
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('en'); return false;">
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('ar'); return false;">
+                            Arabic
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-translate="btn_enroll">
+                Enroll Now <i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid py-5 mb-5 page-header" style="background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=500') center center no-repeat; background-size: cover;">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown" data-translate="management_title">Management Programs</h1>
+                    <p class="fs-5 text-light mb-4" data-translate="management_subtitle">Master Management Skills � Optimize Operations � Drive Performance</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html" data-translate="nav_home">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="program-leadership-management.html" data-translate="nav_leadership">Leadership & Management</a></li>
+                            <li class="breadcrumb-item text-white active" data-translate="management_title">Management Programs</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Programs Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3" data-translate="nav_programs">Programs</h6>
+                <h1 class="mb-5" data-translate="management_title">Management Programs</h1>
+            </div>
+
+            <div class="programs-list">
+                <!-- Program 1 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-1">
+                    <h4 class="text-info mb-3">1. Effective Administrative Communication</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Train the participant on the most important skills that help them achieve good communication with their employees</li>
+                        <li>Learn the art of dealing with difficult individuals</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Personality and human behavior</li>
+                        <li>Concept and importance of effective communication</li>
+                        <li>Elements of effective communication</li>
+                        <li>Conditions for successful communication</li>
+                        <li>Most important types of communication</li>
+                        <li>Barriers to the communication process</li>
+                        <li>Evaluation of communication skills</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-2">
+                    <h4 class="text-info mb-3">2. Advanced Skills in Office Management and Work Organization</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Develop the necessary knowledge, skills, and attitudes to understand the function of executive secretarial work and office management</li>
+                        <li>Develop the competencies and skills of employees in secretarial and office management</li>
+                        <li>Develop the behavioral skills of secretarial staff and prepare them psychologically and professionally</li>
+                        <li>Develop the skills of executive secretarial work, office management, and effective communication skills</li>
+                        <li>Acquire and develop meeting organization skills, memo and message coordination skills, as well as dealing with others skills</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Executive secretarial work and the fundamentals of modern office management</li>
+                        <li>Effective skills in office management and secretarial work</li>
+                        <li>Technical secretarial skills</li>
+                        <li>Effective communication and correspondence skills</li>
+                        <li>The role of information technology and office work skills</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-3">
+                    <h4 class="text-info mb-3">3. Management by Objectives and Achievement of Results</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Provide participants with the necessary knowledge to apply Management by Objectives (MBO) systems</li>
+                        <li>Provide participants with the necessary knowledge to define objectives within the framework of the organization's policies and orientations</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Origin of Management by Objectives</li>
+                        <li>The philosophy underlying MBO</li>
+                        <li>Elements of objectives</li>
+                        <li>Setting objectives</li>
+                        <li>Requirements for applying MBO</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-4">
+                    <h4 class="text-info mb-3">4. Managing Meetings and Drafting Effective Agendas</h4>
+                    <h6 class="fw-bold mb-2">Program Contents:</h6>
+                    <ul class="mb-3">
+                        <li><strong>Procedures to be taken before the business meeting:</strong>
+                            <ul>
+                                <li>The business meeting plan</li>
+                                <li>Make sure you need a meeting</li>
+                                <li>Ensuring appropriate participation in the meeting</li>
+                                <li>Distributing and reviewing pre-work before the meeting</li>
+                            </ul>
+                        </li>
+                        <li><strong>Procedures to be taken during the business meeting:</strong>
+                            <ul>
+                                <li>Facilitating an effective business meeting</li>
+                                <li>Involving every participant in the actionable procedures</li>
+                                <li>Develop an effective follow-up plan for the business meeting</li>
+                            </ul>
+                        </li>
+                        <li><strong>Procedures to be taken after the business meeting:</strong>
+                            <ul>
+                                <li>Disseminating the minutes of the meeting</li>
+                                <li>Effective business meeting follow-up</li>
+                                <li>Accountability for follow-up during the next meeting</li>
+                                <li>Extracting the business meeting process for continuous improvement</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-5">
+                    <h4 class="text-info mb-3">5. Building and Leading Work Teams</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Provide participants with leadership and supervisory skills, and introduce them to group dynamics</li>
+                        <li>Help participants understand personal abilities and psychological traits, which helps them understand themselves and others to the degree that allows for increasing teamwork effectiveness and building team spirit</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Leadership styles and their role in performance effectiveness</li>
+                        <li>The difference between a team and a group</li>
+                        <li>Definition of the team building process</li>
+                        <li>Conditions for forming a work team</li>
+                        <li>Perception skills and building trust among team members</li>
+                        <li>Communications and performance effectiveness</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 6 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-6">
+                    <h4 class="text-info mb-3">6. Performance Management and Evaluation</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Deepen participants' understanding of performance and the fundamentals upon which it is based</li>
+                        <li>Refine the skills of objective evaluation of subordinates' performance</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Concept of performance and performance evaluation</li>
+                        <li>Performance evaluation or performance management</li>
+                        <li>Performance planning methods</li>
+                        <li>Performance evaluation models and how to design different forms for functional divisions</li>
+                        <li>The role of performance evaluation in continuous improvement</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 7 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-7">
+                    <h4 class="text-info mb-3">7. Distinguished Functional Behavior and the Art of Dealing with Others</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Maintain employees' behavior in all work situations</li>
+                        <li>Trustworthiness and confidence in fulfilling all work responsibilities</li>
+                        <li>Practice distinguished personal habits in the workplace</li>
+                        <li>Recognize the importance of positive attitudes, behavior, and positive thinking</li>
+                        <li>Work on creating professional relationships with others</li>
+                        <li>Recognize the importance of good communication skills</li>
+                        <li>Identify the rules and regulations of behavior and ethics during work</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Behavior</li>
+                        <li>How to change your behavior</li>
+                        <li>Factors affecting behavior</li>
+                        <li>Increasing personal effectiveness</li>
+                        <li>Dealing with annoying and difficult individuals</li>
+                        <li>Managing organizational conflict</li>
+                        <li>How to deal with people with special needs</li>
+                        <li>Programming and modeling skills</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 8 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-8">
+                    <h4 class="text-info mb-3">8. Management of Excellence in Customer Service - Advanced Level</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Identify the true secrets of excellence in customer service</li>
+                        <li>Build the ability to evaluate the level of distinguished service in any sector</li>
+                        <li>Practice service provision skills according to the "theatrical presentation of service" theory</li>
+                        <li>Develop service providers' skills in communicating with customers</li>
+                        <li>The art of absorbing customer anger and turning problems into opportunities for loyalty</li>
+                        <li>Apply phone customer service skills and its secrets</li>
+                        <li>Understand the nature of customer complaints and reduce the barriers that prevent the customer from complaining</li>
+                        <li>The art of creating customers for life</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Introductory definition of creativity in customer service, the art of dealing with the public, and its importance</li>
+                        <li>The traditional and modern view of customers, the difference between them, and the impact of scientific and technological progress</li>
+                        <li>Strategies for excellence in customer service and methods of application</li>
+                        <li>Introducing participants to the behavioral patterns of customers and how to deal with each pattern</li>
+                        <li>Ways to deal with difficult people</li>
+                        <li>Remote sensing methods to know customers' needs and requirements remotely</li>
+                        <li>Techniques for coping with stress, tension, and pain resulting from dealing with customers and the public</li>
+                        <li>Elements and keys to effective and fruitful dialogue and discussion</li>
+                        <li>Methods for turning sterile conversations into fruitful ones</li>
+                        <li>Methods for dealing with customer complaints</li>
+                        <li>Body language and its effect on the communication process, increasing its effectiveness, and enabling participants to know what is on customers' minds through the movement of every body part</li>
+                        <li>Modern methods and techniques for understanding customers and creating rapport with them through Neuro-Linguistic Programming (NLP)</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 9 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-9">
+                    <h4 class="text-info mb-3">9. Modern Office Management for the Executive Secretary</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Identify the concept of executive secretarial work and its importance in organizing office management</li>
+                        <li>Identify the tasks of the executive secretary and the work they must perform</li>
+                        <li>Identify how to improve performance when dealing with others, paperwork, and priorities</li>
+                        <li>Identify ways to overcome procrastination and stress for senior management office managers</li>
+                        <li>Develop the secretary's skills in preparing and organizing successful meetings</li>
+                        <li>Identify the areas that secretarial work must control for senior office management</li>
+                        <li>Develop the distinguished secretary's communication and innovation skills</li>
+                        <li>Identify the ten common mistakes of the executive secretary and how to avoid them</li>
+                        <li>Identify the skills that must be available in the manager of senior leadership administration</li>
+                        <li>Develop the distinguished secretary's communication skills</li>
+                        <li>Identify the art of writing reports, memos, and meeting minutes for the distinguished secretary</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li><strong>Basic concepts of executive secretarial work:</strong>
+                            <ul>
+                                <li>Concept of secretarial work</li>
+                                <li>Importance of executive secretarial work</li>
+                                <li>Tasks performed by the executive secretary</li>
+                                <li>Skills and abilities of the executive secretary</li>
+                                <li>Personal and scientific qualities of the executive secretary</li>
+                                <li>The Ten Commandments for the successful executive secretary</li>
+                                <li>Comparison of the secretarial function in Europe, America, Japan, and Arab countries</li>
+                            </ul>
+                        </li>
+                        <li><strong>Executive secretarial work and meeting preparation:</strong>
+                            <ul>
+                                <li>The secretary's role in planning the meeting</li>
+                                <li>The secretary's role on the day before the meeting</li>
+                                <li>The secretary's role on the day of the meeting</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 10 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-10">
+                    <h4 class="text-info mb-3">10. Work Stress Management</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Develop participants' skills in diagnosing and identifying the sources and types of work stress to raise their abilities to effectively confront and manage it</li>
+                        <li>This requires developing the skills of effective delegation and time management</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Defining the concept of work and its effects on individuals</li>
+                        <li>Identifying the sources of work stress</li>
+                        <li>Identifying the results of stress and its effects on individuals</li>
+                        <li>Identifying behavioral methods for alleviating work stress</li>
+                        <li>Developing positive habits to reduce the exacerbation of work stress</li>
+                        <li>Smart delegation</li>
+                        <li>Stress management at the individual and organizational level</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 11 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-11">
+                    <h4 class="text-info mb-3">11. Job Analysis and Design and Measuring HR Performance Efficiency</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Establish an effective practical system for job analysis and description</li>
+                        <li>The ability to understand and analyze job description cards</li>
+                        <li>Provide participants with the scientific concepts and modern methods for employee performance evaluation</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Importance of job classification</li>
+                        <li>Preparation and planning for the job description and classification system</li>
+                        <li>Job analysis</li>
+                        <li>Methods and tools for performance evaluation</li>
+                        <li>Common errors in performance evaluation and how to deal with them</li>
+                        <li>Importance of training and guiding those who evaluate the performance of their subordinates</li>
+                        <li>The role of training in raising human performance efficiency</li>
+                        <li>Applications of job description and classification processes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 12 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-12">
+                    <h4 class="text-info mb-3">12. Workforce Planning and Process Reengineering</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Human resources planning and analysis of its activities, and how to deal with different types of employees</li>
+                        <li>Job analysis, career development, wage and incentive systems, and talent acquisition processes in organizations</li>
+                        <li>Deepen participants' knowledge of innovative approaches to effect change and methods for improving the organizational climate to face global challenges</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Workforce planning, career path, and self-development</li>
+                        <li>Planning and developing human resources in organizations</li>
+                        <li>Strategic human resources planning</li>
+                        <li>Modern change strategies in organizations</li>
+                        <li>Modern concepts of change management and improving the work climate</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 13 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-13">
+                    <h4 class="text-info mb-3">13. Negotiation Skills (The Harvard Methodology)</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Acquire negotiation skills</li>
+                        <li>The ability to effectively participate in negotiation processes to achieve cooperation, whether the negotiation is local or across different cultures</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Effective negotiation</li>
+                        <li>The nature and pillars of negotiation</li>
+                        <li>Types of negotiations</li>
+                        <li>General principles and success factors for negotiation</li>
+                        <li>Stages of the negotiation process</li>
+                        <li>The Harvard Negotiation Model</li>
+                        <li>Evaluation of personal negotiation skills</li>
+                        <li>Case studies and practical applications</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 14 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-14">
+                    <h4 class="text-info mb-3">14. Decision-Making and Problem-Solving Skills</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Develop individual and collective innovation skills among participants and acquire creative problem-solving methods for work issues</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Types of problems</li>
+                        <li>Importance of studying problem-solving and decision-making in organizations</li>
+                        <li>Distinguishing between symptoms, causes, and problems</li>
+                        <li>Identifying the best innovative methods used in the problem-solving process</li>
+                        <li>The creative process, creative thinking methods, and the creative management style</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 15 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-15">
+                    <h4 class="text-info mb-3">15. Delegation Skills</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Introduce participants to the fundamentals of effective delegation</li>
+                        <li>Develop participants' skill in building a second-tier through the delegation process</li>
+                        <li>Introduce participants to the role of effective delegation in rationalizing the use of time</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>What is delegation?</li>
+                        <li>The eight steps for effective delegation</li>
+                        <li>Preparation for the delegation meeting</li>
+                        <li>The six conditions for effective delegation</li>
+                        <li>Evaluation of delegation skills</li>
+                        <li>Effective delegation and its impact on time management and stress management</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+
+                <!-- Program 16 -->
+                <div class="mb-4 p-4 bg-light rounded" id="management-program-16">
+                    <h4 class="text-info mb-3">16. The "Covey Matrix" for Prioritization and Time Management</h4>
+                    <h6 class="fw-bold mb-2">Program Objectives:</h6>
+                    <ul class="mb-3">
+                        <li>Increase participants' ability for self-management and time management and to face the challenges they encounter in managing time effectively</li>
+                        <li>Acquire habits for completing tasks with the required efficiency</li>
+                    </ul>
+                    <h6 class="fw-bold mb-2">Main Axes:</h6>
+                    <ul>
+                        <li>Understanding the meaning of time</li>
+                        <li>Importance of time and studying its cost</li>
+                        <li>Self-management: The key to managing your time</li>
+                        <li>Analysis and study of areas of time wastage</li>
+                        <li>Prioritizing the use of time</li>
+                        <li>Time planning and control</li>
+                        <li>Effectiveness of meetings, work stress, and time management</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-info mt-3">
+                        <i class="fa fa-user-plus me-2"></i>Enroll in This Program
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="contact.html" class="btn btn-info btn-lg">
+                    <i class="fa fa-phone-alt me-2"></i>Contact Us for More Information
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Programs End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3"><span data-translate="footer_quick_links">Quick Link</span></h4>
+                    <a class="btn btn-link" href="about.html"><span data-translate="footer_about">About Us</span></a>
+                    <a class="btn btn-link" href="contact.html"><span data-translate="footer_contact">Contact Us</span></a>
+                    <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="faqs.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3"><span data-translate="footer_contact_title">Contact</span></h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Alexandria, Egypt</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+20 123 456 7890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@globalacademy.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61579270026809" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3"><span data-translate="footer_newsletter">Newsletter</span></h4>
+                    <p>Stay updated with our latest programs</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="<span data-translate="footer_email_placeholder">Your email</span>">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">Global Academy</a>, <span data-translate="footer_rights">All Right Reserved</span>.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="programs.html">Programs</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
+</body>
+
+</html>
+
+

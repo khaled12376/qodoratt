@@ -45,7 +45,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="533148242_122102107550975667_6846905199516547475_n.jpg" alt="Global Academy Logo" class="navbar-logo">
-            <h2 class="m-0 text-primary">Global Academy</h2>
+            <h2 class="m-0 text-primary" data-translate="academy_name">Global Academy</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -54,46 +54,57 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <!-- Regular Links -->
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About</a>
+                <a href="index.html" class="nav-item nav-link" data-translate="nav_home">Home</a>
+                <a href="about.html" class="nav-item nav-link" data-translate="nav_about">About</a>
 
                 <!-- Programs Dropdown -->
                 <div class="nav-item dropdown">
                     <a href="programs.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                        onclick="window.location.href='programs.html'">Programs</a>
+                        onclick="window.location.href='programs.html'" data-translate="nav_programs">Programs</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="#" class="dropdown-item">Leadership & Management</a>
-                        <a href="#" class="dropdown-item">Marketing Programs</a>
-                        <a href="#" class="dropdown-item">Quality Programs</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_leadership">Leadership & Management</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_marketing">Marketing Programs</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_quality">Quality Programs</a>
                         <!-- <a href="#" class="dropdown-item">Occupational Safety & Health</a> -->
-                        <a href="#" class="dropdown-item">Accounting & Finance</a>
-                        <a href="#" class="dropdown-item">Procurement & Supply Chain</a>
-                        <a href="#" class="dropdown-item">Human Resources</a>
-                        <a href="#" class="dropdown-item">Engineering Programs</a>
-                        <a href="#" class="dropdown-item">Quality Programs</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_accounting">Accounting & Finance</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_procurement">Procurement & Supply Chain</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_hr">Human Resources</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_engineering">Engineering Programs</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_safety">Safety & Health Programs</a>
                     </div>
                 </div>
 
                 <!-- Diplomas Dropdown -->
                 <div class="nav-item dropdown">
                     <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                      onclick="window.location.href='diplomas.html'">Diplomas</a>
+                      onclick="window.location.href='diplomas.html'" data-translate="nav_diplomas">Diplomas</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="#" class="dropdown-item">Training and Development</a>
-                        <a href="#" class="dropdown-item">Accounting and Finance</a>
-                        <a href="#" class="dropdown-item">Management Sciences</a>
-                        <a href="#" class="dropdown-item">Women's Leadership</a>
-                        <a href="#" class="dropdown-item">Project Management</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_training_diploma">Training and Development</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_accounting_diploma">Accounting and Finance</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_management_diploma">Management Sciences</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_women_diploma">Women's Leadership</a>
+                        <a href="#" class="dropdown-item" data-translate="nav_project_diploma">Project Management</a>
                     </div>
                 </div>
 
                 <!-- Contact Link -->
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
+                <a href="contact.html" class="nav-item nav-link" data-translate="nav_contact">Contact</a>
+                            
+                <!-- Language Selector -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i>
+                        <span id="currentLang">EN</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end fade-down">
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('en'); return false;">English</a>
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('ar'); return false;">Arabic</a>
+                    </div>
+                </div></div>
 
             <!-- Button -->
             <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
-                Join Now <i class="fa fa-arrow-right ms-3"></i>
+                <span data-translate="btn_join">Join Now</span> <i class="fa fa-arrow-right ms-3"></i>
             </a>
         </div>
     </nav>
@@ -108,7 +119,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <h1 class="display-3 text-white animated slideInDown">Contact Us</h1>
-                    <p class="fs-5 text-light mb-4">Get in Touch with Global Academy • Alexandria, Egypt</p>
+                    <p class="fs-5 text-light mb-4">Get in Touch with Global Academy � Alexandria, Egypt</p>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
@@ -127,9 +138,9 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
-                <h2 class="mb-3">Ready to Transform Your Career?</h2>
-                <p class="text-muted">Connect with Global Academy today to learn more about our professional programs and diplomas</p>
+                <h6 class="section-title bg-white text-center text-primary px-3" data-translate="contact_section_title">Contact Us</h6>
+                <h2 class="mb-3" data-translate="contact_section_heading">Ready to Transform Your Career?</h2>
+                <p class="text-muted" data-translate="contact_section_desc">Connect with Global Academy today to learn more about our professional programs and diplomas</p>
             </div>
             
             <!-- Contact Info Cards -->
@@ -139,8 +150,8 @@
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 75px; height: 75px;">
                             <i class="fa fa-map-marker-alt fa-2x text-white"></i>
                         </div>
-                        <h5 class="mb-3">Visit Our Campus</h5>
-                        <p class="mb-0">Alexandria, Egypt<br>Professional Training Center</p>
+                        <h5 class="mb-3" data-translate="contact_visit_title">Visit Our Campus</h5>
+                        <p class="mb-0"><span data-translate="contact_visit_text">Alexandria, Egypt</span><br><span data-translate="contact_visit_text2">Professional Training Center</span></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -148,8 +159,8 @@
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 75px; height: 75px;">
                             <i class="fa fa-phone-alt fa-2x text-white"></i>
                         </div>
-                        <h5 class="mb-3">Call Us</h5>
-                        <p class="mb-0">+20 123 456 7890<br>Available 9 AM - 6 PM</p>
+                        <h5 class="mb-3" data-translate="contact_call_title">Call Us</h5>
+                        <p class="mb-0"><span data-translate="contact_call_text">+20 123 456 7890</span><br><span data-translate="contact_call_text2">Available 9 AM - 6 PM</span></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -157,8 +168,8 @@
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 75px; height: 75px;">
                             <i class="fa fa-envelope fa-2x text-white"></i>
                         </div>
-                        <h5 class="mb-3">Email Us</h5>
-                        <p class="mb-0">info@globalacademy.com<br>admissions@globalacademy.com</p>
+                        <h5 class="mb-3" data-translate="contact_email_title">Email Us</h5>
+                        <p class="mb-0"><span data-translate="contact_email_text">info@globalacademy.com</span><br><span data-translate="contact_email_text2">admissions@globalacademy.com</span></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
@@ -166,8 +177,8 @@
                         <div class="bg-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 75px; height: 75px;">
                             <i class="fab fa-whatsapp fa-2x text-primary"></i>
                         </div>
-                        <h5 class="mb-3 text-white">WhatsApp</h5>
-                        <p class="mb-0">+20 123 456 7890<br>Quick Response</p>
+                        <h5 class="mb-3 text-white" data-translate="contact_whatsapp_title">WhatsApp</h5>
+                        <p class="mb-0"><span data-translate="contact_whatsapp_text">+20 123 456 7890</span><br><span data-translate="contact_whatsapp_text2">Quick Response</span></p>
                     </div>
                 </div>
             </div>
@@ -176,54 +187,54 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-light rounded p-5 h-100">
-                        <h3 class="mb-4">Send Us a Message</h3>
-                        <p class="mb-4">Ready to advance your career? Fill out the form below and our admissions team will get back to you within 24 hours.</p>
+                        <h3 class="mb-4" data-translate="contact_form_title">Send Us a Message</h3>
+                        <p class="mb-4" data-translate="contact_form_desc">Ready to advance your career? Fill out the form below and our admissions team will get back to you within 24 hours.</p>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                        <label for="name">Full Name *</label>
+                                        <label for="name" data-translate="contact_form_name">Full Name *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                        <label for="email">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" placeholder="<span data-translate="footer_email_placeholder">Your email</span>" required>
+                                        <label for="email" data-translate="contact_form_email">Email Address *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
-                                        <label for="phone">Phone Number</label>
+                                        <label for="phone" data-translate="contact_form_phone">Phone Number</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select" id="interest">
-                                            <option value="">Select Interest</option>
-                                            <option value="programs">Professional Programs</option>
-                                            <option value="diplomas">Diploma Courses</option>
-                                            <option value="corporate">Corporate Training</option>
-                                            <option value="consultation">Consultation</option>
+                                            <option value="" data-translate="contact_form_interest_select">Select Interest</option>
+                                            <option value="programs" data-translate="contact_form_interest_programs">Professional Programs</option>
+                                            <option value="diplomas" data-translate="contact_form_interest_diplomas">Diploma Courses</option>
+                                            <option value="corporate" data-translate="contact_form_interest_corporate">Corporate Training</option>
+                                            <option value="consultation" data-translate="contact_form_interest_consultation">Consultation</option>
                                         </select>
-                                        <label for="interest">Area of Interest</label>
+                                        <label for="interest" data-translate="contact_form_interest">Area of Interest</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <label for="subject" data-translate="contact_form_subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea class="form-control" placeholder="Tell us about your goals and how we can help you" id="message" style="height: 120px" required></textarea>
-                                        <label for="message">Your Message *</label>
+                                        <label for="message" data-translate="contact_form_message">Your Message *</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3 rounded-pill" type="submit">
+                                    <button class="btn btn-primary w-100 py-3 rounded-pill" type="submit" data-translate="contact_form_submit">
                                         Send Message <i class="fa fa-arrow-right ms-2"></i>
                                     </button>
                                 </div>
@@ -243,47 +254,47 @@
                         
                         <!-- Quick Info -->
                         <div class="bg-primary rounded p-4 text-white">
-                            <h4 class="text-white mb-4">Why Choose Global Academy?</h4>
+                            <h4 class="text-white mb-4" data-translate="contact_why_title">Why Choose Global Academy?</h4>
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-check-circle me-3"></i>
-                                        <span>6 International Accreditations</span>
+                                        <span data-translate="contact_why_accreditations">6 International Accreditations</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-check-circle me-3"></i>
-                                        <span>500+ Graduates</span>
+                                        <span data-translate="contact_why_graduates">500+ Graduates</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-check-circle me-3"></i>
-                                        <span>50+ Programs</span>
+                                        <span data-translate="contact_why_programs">50+ Programs</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-check-circle me-3"></i>
-                                        <span>Expert Instructors</span>
+                                        <span data-translate="contact_why_instructors">Expert Instructors</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-check-circle me-3"></i>
-                                        <span>Flexible Learning</span>
+                                        <span data-translate="contact_why_flexible">Flexible Learning</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-check-circle me-3"></i>
-                                        <span>Career Support</span>
+                                        <span data-translate="contact_why_support">Career Support</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center mt-4">
-                                <a href="about.html" class="btn btn-light rounded-pill px-4">
+                                <a href="about.html" class="btn btn-light rounded-pill px-4" data-translate="contact_learn_more_btn">
                                     Learn More About Us <i class="fa fa-arrow-right ms-2"></i>
                                 </a>
                             </div>
@@ -301,15 +312,15 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <h4 class="text-white mb-3"><span data-translate="footer_quick_links">Quick Link</span></h4>
+                    <a class="btn btn-link" href="about.html"><span data-translate="footer_about">About Us</span></a>
+                    <a class="btn btn-link" href="contact.html"><span data-translate="footer_contact">Contact Us</span></a>
                     <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
                     <a class="btn btn-link" href="terms.html">Terms & Condition</a>
                     <a class="btn btn-link" href="faqs.html">FAQs & Help</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
+                    <h4 class="text-white mb-3"><span data-translate="footer_contact_title">Contact</span></h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
@@ -345,10 +356,10 @@
                     </div> -->
                 <!-- </div> -->
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Sign-up for our newsletter</p>
+                    <h4 class="text-white mb-3"><span data-translate="footer_newsletter">Newsletter</span></h4>
+                    <p><span data-translate="footer_newsletter_text">Sign-up for our newsletter</span></p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="<span data-translate="footer_email_placeholder">Your email</span>">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div>
@@ -358,7 +369,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Global Academy</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">Global Academy</a>, <span data-translate="footer_rights">All Right Reserved</span>.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -389,6 +400,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>

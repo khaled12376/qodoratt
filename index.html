@@ -44,7 +44,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="533148242_122102107550975667_6846905199516547475_n.jpg" alt="Global Academy Logo" class="navbar-logo">
-            <h2 class="m-0 text-primary">Global Academy</h2>
+            <h2 class="m-0 text-primary" data-translate="academy_name">Global Academy</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -52,36 +52,52 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="index.html" class="nav-item nav-link active" data-translate="nav_home">Home</a>
+                <a href="about.html" class="nav-item nav-link" data-translate="nav_about" data-translate="nav_about">About</a>
                 <div class="nav-item dropdown">
-                    <a href="programs.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'">Programs</a>
+                    <a href="programs.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='programs.html'" data-translate="nav_programs" data-translate="nav_programs">Programs</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="engineering-programs.html" class="dropdown-item">Engineering Programs</a>
-                        <a href="program-leadership-management.html" class="dropdown-item">Leadership & Management</a>
-                        <a href="program-marketing.html" class="dropdown-item">Marketing Programs</a>
-                        <a href="program-quality.html" class="dropdown-item">Quality Programs</a>
-                        <a href="program-safety-health.html" class="dropdown-item">Safety & Health Programs</a>
-                        <a href="program-accounting-finance.html" class="dropdown-item">Accounting & Finance</a>
-                        <a href="program-procurement.html" class="dropdown-item">Procurement & Supply Chain</a>
-                        <a href="program-human-resources.html" class="dropdown-item">Human Resources</a>
+                        <a href="engineering-programs.html" class="dropdown-item" data-translate="nav_engineering">Engineering Programs</a>
+                        <a href="program-leadership-management.html" class="dropdown-item" data-translate="nav_leadership">Leadership & Management</a>
+                        <a href="program-marketing.html" class="dropdown-item" data-translate="nav_marketing">Marketing Programs</a>
+                        <a href="program-quality.html" class="dropdown-item" data-translate="nav_quality">Quality Programs</a>
+                        <a href="program-safety-health.html" class="dropdown-item" data-translate="nav_safety">Safety & Health Programs</a>
+                        <a href="program-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting">Accounting & Finance</a>
+                        <a href="program-procurement.html" class="dropdown-item" data-translate="nav_procurement">Procurement & Supply Chain</a>
+                        <a href="program-human-resources.html" class="dropdown-item" data-translate="nav_hr">Human Resources</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'">Diplomas</a>
+                    <a href="diplomas.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="window.location.href='diplomas.html'" data-translate="nav_diplomas" data-translate="nav_diplomas">Diplomas</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="diploma-training-development.html" class="dropdown-item">Training & Development</a>
-                        <a href="diploma-accounting-finance.html" class="dropdown-item">Accounting & Finance</a>
-                        <a href="diploma-management-science.html" class="dropdown-item">Management Science</a>
-                        <a href="diploma-womens-leadership.html" class="dropdown-item">Women's Leadership</a>
-                        <a href="diploma-project-management.html" class="dropdown-item">Project Management</a>
+                        <a href="diploma-training-development.html" class="dropdown-item" data-translate="nav_training_diploma">Training & Development</a>
+                        <a href="diploma-accounting-finance.html" class="dropdown-item" data-translate="nav_accounting_diploma">Accounting & Finance</a>
+                        <a href="diploma-management-science.html" class="dropdown-item" data-translate="nav_management_diploma">Management Science</a>
+                        <a href="diploma-womens-leadership.html" class="dropdown-item" data-translate="nav_women_diploma">Women's Leadership</a>
+                        <a href="diploma-project-management.html" class="dropdown-item" data-translate="nav_project_diploma">Project Management</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact.html" class="nav-item nav-link" data-translate="nav_contact" data-translate="nav_contact">Contact</a>
+                
+                <!-- Language Selector -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-2"></i>
+                        <span id="currentLang">EN</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end fade-down">
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('en'); return false;">
+                            English
+                        </a>
+                        <a href="#" class="dropdown-item" onclick="switchLanguage('ar'); return false;">
+                            Arabic
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <!-- Button -->
-            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block cta-button">
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block cta-button" data-translate="btn_join">
                 Join Now <i class="fa fa-arrow-right ms-3"></i>
             </a>
         </div>
@@ -92,13 +108,13 @@
     <div class="hero-image-container">
         <img src="532312871_122102108348975667_1123705893907721792_n.jpg" alt="Global Academy" class="hero-image">
         <div class="hero-content">
-            <h1 class="hero-title">Global Academy</h1>
-            <p class="hero-subtitle">Transforming Careers Through World-Class Professional Development</p>
+            <h1 class="hero-title" data-translate="hero_title">Global Academy</h1>
+            <p class="hero-subtitle" data-translate="hero_subtitle">Transforming Careers Through World-Class Professional Development</p>
             <div class="hero-buttons">
-                <a href="programs.html" class="btn btn-primary btn-lg me-3">
+                <a href="programs.html" class="btn btn-primary btn-lg me-3" data-translate="hero_explore">
                     <i class="fa fa-play me-2"></i>Explore Programs
                 </a>
-                <a href="contact.html" class="btn btn-outline-light btn-lg">
+                <a href="contact.html" class="btn btn-outline-light btn-lg" data-translate="hero_join">
                     <i class="fa fa-user-plus me-2"></i>Join Now
                 </a>
             </div>
@@ -164,9 +180,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center mb-5">
                     <div class="section-badge">
-                        <span>About Global Academy</span>
+                        <span data-translate="about_badge">About Global Academy</span>
                     </div>
-                    <h2 class="section-heading">Leading the Future of Professional Development</h2>
+                    <h2 class="section-heading" data-translate="about_heading">Leading the Future of Professional Development</h2>
                 </div>
             </div>
             <div class="row g-4">
@@ -177,8 +193,8 @@
                             <i class="fa fa-users text-primary"></i>
                         </div>
                         <div class="about-card-content">
-                            <h4 class="mb-3">Who We Are</h4>
-                            <p class="mb-0">Global Academy is a premier institution dedicated to empowering professionals and organizations through innovative training and development programs. We are committed to fostering excellence and driving transformation in the modern workplace.</p>
+                            <h4 class="mb-3" data-translate="about_who_title">Who We Are</h4>
+                            <p class="mb-0" data-translate="about_who_text">Global Academy is a premier institution dedicated to empowering professionals and organizations through innovative training and development programs. We are committed to fostering excellence and driving transformation in the modern workplace.</p>
                         </div>
                     </div>
                 </div>
@@ -190,8 +206,8 @@
                             <i class="fa fa-bullseye text-primary"></i>
                         </div>
                         <div class="about-card-content">
-                            <h4 class="mb-3">Our Goal</h4>
-                            <p class="mb-0">To bridge the gap between theoretical knowledge and practical application by delivering world-class training programs that enhance skills, boost productivity, and accelerate career growth for professionals across all industries.</p>
+                            <h4 class="mb-3" data-translate="about_goal_title">Our Goal</h4>
+                            <p class="mb-0" data-translate="about_goal_text">To bridge the gap between theoretical knowledge and practical application by delivering world-class training programs that enhance skills, boost productivity, and accelerate career growth for professionals across all industries.</p>
                         </div>
                     </div>
                 </div>
@@ -203,8 +219,8 @@
                             <i class="fa fa-eye text-primary"></i>
                         </div>
                         <div class="about-card-content">
-                            <h4 class="mb-3">Our Vision</h4>
-                            <p class="mb-0">To become the global leader in professional development and training, creating a world where every individual and organization has access to transformative learning experiences that unlock their full potential.</p>
+                            <h4 class="mb-3" data-translate="about_vision_title">Our Vision</h4>
+                            <p class="mb-0" data-translate="about_vision_text">To become the leading global provider of professional development solutions, recognized for our commitment to excellence, innovation, and the success of our learners and partner organizations.</p>
                         </div>
                     </div>
                 </div>
@@ -217,8 +233,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-heading">Transform Your Career</h2>
-                    <p class="section-subheading">Explore our comprehensive range of professional development programs</p>
+                    <h2 class="section-heading" data-translate="transform_career">Transform Your Career</h2>
+                    <p class="section-subheading" data-translate="explore_programs_desc">Explore our comprehensive range of professional development programs</p>
                 </div>
             </div>
         </div>
@@ -231,11 +247,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-10 col-lg-8 hero-text">
-                                    <h5 class="text-primary text-uppercase mb-3 animate__animated animate__slideInDown">Leadership & Management</h5>
-                                    <h1 class="display-5 animate__animated animate__slideInDown">Shape Tomorrow's Leaders</h1>
-                                    <p class="lead">Develop executive skills, strategic thinking, and team management capabilities through our comprehensive leadership programs.</p>
-                                    <a class="btn btn-primary me-2" href="diplomas.html">Explore Diplomas</a>
-                                    <a class="btn btn-light" href="#contact">Enroll Now</a>
+                                    <h5 class="text-primary text-uppercase mb-3 animate__animated animate__slideInDown" data-translate="leadership_management">Leadership & Management</h5>
+                                    <h1 class="display-5 animate__animated animate__slideInDown" data-translate="shape_leaders">Shape Tomorrow's Leaders</h1>
+                                    <p class="lead" data-translate="develop_executive">Develop executive skills, strategic thinking, and team management capabilities through our comprehensive leadership programs.</p>
+                                    <a class="btn btn-primary me-2" href="diplomas.html" data-translate="explore_diplomas">Explore Diplomas</a>
+                                    <a class="btn btn-light" href="#contact" data-translate="enroll_now">Enroll Now</a>
                                 </div>
                             </div>
                         </div>
@@ -249,11 +265,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-10 col-lg-8 hero-text">
-                                    <h5 class="text-primary text-uppercase mb-3 animate__animated animate__slideInDown">Professional Excellence</h5>
-                                    <h1 class="display-5 animate__animated animate__slideInDown">Unlock Your Potential</h1>
-                                    <p class="lead">Comprehensive professional development programs designed to accelerate your career growth and success.</p>
-                                    <a class="btn btn-primary me-2" href="programs.html">Discover Programs</a>
-                                    <a class="btn btn-light" href="#contact">Join Today</a>
+                                    <h5 class="text-primary text-uppercase mb-3 animate__animated animate__slideInDown" data-translate="professional_excellence">Professional Excellence</h5>
+                                    <h1 class="display-5 animate__animated animate__slideInDown" data-translate="unlock_potential">Unlock Your Potential</h1>
+                                    <p class="lead" data-translate="comprehensive_dev">Comprehensive professional development programs designed to accelerate your career growth and success.</p>
+                                    <a class="btn btn-primary me-2" href="programs.html" data-translate="discover_programs">Discover Programs</a>
+                                    <a class="btn btn-light" href="#contact" data-translate="join_today">Join Today</a>
                                 </div>
                             </div>
                         </div>
@@ -271,15 +287,15 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
-                    <a class="btn btn-link" href="terms.html">Terms & Condition</a>
-                    <a class="btn btn-link" href="faqs.html">FAQs & Help</a>
+                    <h4 class="text-white mb-3" data-translate="footer_quick_link">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html" data-translate="footer_about">About Us</a>
+                    <a class="btn btn-link" href="contact.html" data-translate="footer_contact_us">Contact Us</a>
+                    <a class="btn btn-link" href="privacy.html" data-translate="footer_privacy">Privacy Policy</a>
+                    <a class="btn btn-link" href="terms.html" data-translate="footer_terms">Terms & Condition</a>
+                    <a class="btn btn-link" href="faqs.html" data-translate="footer_faqs">FAQs & Help</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
+                    <h4 class="text-white mb-3" data-translate="footer_contact_title">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Egypt</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
@@ -316,12 +332,11 @@
                 </div>
                 -->
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Sign-up for our newsletter</p>
+                    <h4 class="text-white mb-3" data-translate="footer_newsletter">Newsletter</h4>
+                    <p data-translate="footer_newsletter_text">Stay updated with our latest programs</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" data-translate-placeholder="footer_email_placeholder">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-translate="footer_signup">SignUp</button>
                     </div>
                 </div>
             </div>
@@ -330,13 +345,13 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Global Academy</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">Global Academy</a>, <span data-translate="footer_rights">All Right Reserved</span>.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
+                            <a href="" data-translate="footer_home">Home</a>
+                            <a href="" data-translate="footer_cookies">Cookies</a>
+                            <a href="" data-translate="footer_help">Help</a>
                             <a href="">FQAs</a>
                         </div>
                     </div>
@@ -362,5 +377,168 @@
    
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
+    
+    <!-- Translation System -->
+    <script src="js/translate.js"></script>
+    
+    <!-- Keep old inline script for backwards compatibility (will be removed) -->
+    <script style="display:none">
+        // Translation dictionary
+        const translations_old = {
+            en: {
+                // Navigation
+                nav_home: "Home",
+                nav_about: "About",
+                nav_programs: "Programs",
+                nav_engineering: "Engineering Programs",
+                nav_leadership: "Leadership & Management",
+                nav_marketing: "Marketing Programs",
+                nav_quality: "Quality Programs",
+                nav_safety: "Safety & Health Programs",
+                nav_accounting: "Accounting & Finance",
+                nav_procurement: "Procurement & Supply Chain",
+                nav_hr: "Human Resources",
+                nav_diplomas: "Diplomas",
+                nav_training_diploma: "Training & Development",
+                nav_accounting_diploma: "Accounting & Finance",
+                nav_management_diploma: "Management Science",
+                nav_women_diploma: "Women's Leadership",
+                nav_project_diploma: "Project Management",
+                nav_contact: "Contact",
+                btn_join: "Join Now",
+                
+                // Hero Section
+                hero_title: "Global Academy",
+                hero_subtitle: "Transforming Careers Through World-Class Professional Development",
+                hero_explore: "Explore Programs",
+                hero_join: "Join Now",
+                
+                // About Section
+                about_badge: "About Global Academy",
+                about_heading: "Leading the Future of Professional Development",
+                about_who_title: "Who We Are",
+                about_who_text: "Global Academy is a premier institution dedicated to empowering professionals and organizations through innovative training and development programs. We are committed to fostering excellence and driving transformation in the modern workplace.",
+                about_goal_title: "Our Goal",
+                about_goal_text: "To bridge the gap between theoretical knowledge and practical application by delivering world-class training programs that enhance skills, boost productivity, and accelerate career growth for professionals across all industries.",
+                about_vision_title: "Our Vision",
+                about_vision_text: "To become the leading global provider of professional development solutions, recognized for our commitment to excellence, innovation, and the success of our learners and partner organizations.",
+                
+                // Footer
+                footer_quick_link: "Quick Link",
+                footer_about: "About Us",
+                footer_contact_us: "Contact Us",
+                footer_privacy: "Privacy Policy",
+                footer_terms: "Terms & Condition",
+                footer_faqs: "FAQs & Help",
+                footer_contact_title: "Contact",
+                footer_newsletter: "Newsletter",
+                footer_newsletter_text: "Stay updated with our latest programs",
+                footer_email_placeholder: "Your email",
+                footer_signup: "SignUp",
+                footer_rights: "All Right Reserved",
+                footer_home: "Home",
+                footer_cookies: "Cookies",
+                footer_help: "Help"
+            },
+            ar: {
+                // Navigation
+                nav_home: "الرئيسية",
+                nav_about: "عن الأكاديمية",
+                nav_programs: "البرامج",
+                nav_engineering: "برامج الهندسة",
+                nav_leadership: "القيادة والإدارة",
+                nav_marketing: "برامج التسويق",
+                nav_quality: "برامج الجودة",
+                nav_safety: "برامج السلامة والصحة المهنية",
+                nav_accounting: "المحاسبة والمالية",
+                nav_procurement: "المشتريات وسلسلة الإمداد",
+                nav_hr: "الموارد البشرية",
+                nav_diplomas: "الدبلومات",
+                nav_training_diploma: "التدريب والتطوير",
+                nav_accounting_diploma: "المحاسبة والمالية",
+                nav_management_diploma: "علوم الإدارة",
+                nav_women_diploma: "قيادة المرأة",
+                nav_project_diploma: "إدارة المشاريع",
+                nav_contact: "اتصل بنا",
+                btn_join: "انضم الآن",
+                
+                // Hero Section
+                hero_title: "الأكاديمية العالمية",
+                hero_subtitle: "تحويل المسيرات المهنية من خلال التطوير المهني على مستوى عالمي",
+                hero_explore: "استكشف البرامج",
+                hero_join: "انضم الآن",
+                
+                // About Section
+                about_badge: "عن الأكاديمية العالمية",
+                about_heading: "نقود مستقبل التطوير المهني",
+                about_who_title: "من نحن",
+                about_who_text: "الأكاديمية العالمية هي مؤسسة رائدة مكرسة لتمكين المهنيين والمنظمات من خلال برامج تدريب وتطوير مبتكرة. نحن ملتزمون بتعزيز التميز ودفع التحول في مكان العمل الحديث.",
+                about_goal_title: "هدفنا",
+                about_goal_text: "سد الفجوة بين المعرفة النظرية والتطبيق العملي من خلال تقديم برامج تدريبية عالمية المستوى تعزز المهارات وتزيد الإنتاجية وتسرع النمو الوظيفي للمهنيين في جميع الصناعات.",
+                about_vision_title: "رؤيتنا",
+                about_vision_text: "أن نصبح المزود العالمي الرائد لحلول التطوير المهني، معترف به لالتزامنا بالتميز والابتكار ونجاح المتعلمين والمنظمات الشريكة.",
+                
+                // Footer
+                footer_quick_link: "روابط سريعة",
+                footer_about: "من نحن",
+                footer_contact_us: "اتصل بنا",
+                footer_privacy: "سياسة الخصوصية",
+                footer_terms: "الشروط والأحكام",
+                footer_faqs: "الأسئلة الشائعة والمساعدة",
+                footer_contact_title: "التواصل",
+                footer_newsletter: "النشرة الإخبارية",
+                footer_newsletter_text: "ابق على اطلاع بأحدث برامجنا",
+                footer_email_placeholder: "بريدك الإلكتروني",
+                footer_signup: "اشترك",
+                footer_rights: "جميع الحقوق محفوظة",
+                footer_home: "الرئيسية",
+                footer_cookies: "ملفات تعريف الارتباط",
+                footer_help: "مساعدة"
+            }
+        };
+
+        // Get saved language or default to English
+        let currentLanguage = localStorage.getItem('language') || 'en';
+
+        // Function to switch language
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('language', lang);
+            
+            // Update current language display
+            document.getElementById('currentLang').textContent = lang.toUpperCase();
+            
+            // Update HTML lang attribute only (no RTL for now to keep layout)
+            document.documentElement.setAttribute('lang', lang);
+            
+            // Translate all elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    // Handle elements with icons
+                    const icons = element.querySelectorAll('i');
+                    if (icons.length > 0) {
+                        // Store icon HTML
+                        const iconHTML = Array.from(icons).map(i => i.outerHTML).join(' ');
+                        // Get text position relative to icon
+                        const hasIconFirst = element.innerHTML.trim().startsWith('<i');
+                        
+                        if (hasIconFirst) {
+                            element.innerHTML = iconHTML + ' ' + translations[lang][key];
+                        } else {
+                            element.innerHTML = translations[lang][key] + ' ' + iconHTML;
+                        }
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+        }
+
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage(currentLanguage);
+        });
+    </script>
 </body>
 </html>
